@@ -1,0 +1,21 @@
+{
+    "name": "mvcTest",
+    "description": "based MINI3",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "star",
+            "email": "panique@firemail.de"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload":
+    {
+        "psr-4":
+        {
+            "APP\\" : "application/"
+        }
+    }
+}
