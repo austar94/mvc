@@ -73,7 +73,7 @@ class Model
 	 * @param  string $isLog 로그 작성여부
 	 * @return array       sql 결과값
 	 */
-	public function run($sql, $args = [], $isLog = 0)
+	public function run($sql, $args = '', $isLog = 0)
     {
 		$msg					=	new Message();
 
@@ -94,7 +94,7 @@ class Model
 		} finally {
 			//로그기록
 			if($isLog){
-				
+
 			}
 
 			return $msg;

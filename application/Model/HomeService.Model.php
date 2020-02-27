@@ -1,6 +1,7 @@
 <?php
 namespace APP\Model;
 
+use PDO;
 use APP\Core\Model;
 use APP\Dto\Meta;
 
@@ -11,13 +12,20 @@ class HomeService extends Model
 	 * @return [type] [description]
 	 */
 	public function get_boardList(){
-		//옵션을 넣었기떄문에 예외 옵션가능
-		$SQL		=	"SELECT * FROM MetaInfo";
+		//$SQL		=	"SELECT * FROM MetaInfo limit 1";
+		$SQL		=	"CALL spGetOneTossClientList('', '', @PageCount, @PageSize, @TotalCount, @CurrentPage);";
+		$SQL		.=	"SELECT @PageCount AS PageCount, @PageSize AS PageSize, @TotalCount AS TotalCount, @CurrentPage AS CurrentPage;";
 		$msg		=	$this->run($SQL);
 
-		if($msg->get_result()){
-			return $msg->get_data()->fetchAll();
-		} else {
+
+		try {
+
+			do {
+			  var_dump($msg->get_data()->fetchAll());
+			} while ($msg->get_data()->nextRowset());
+
+		} catch (\Exception $e) {
+			$msg->set_msg('오류');
 			return $msg->get_msg();
 		}
 	}

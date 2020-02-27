@@ -1,5 +1,5 @@
 <?php
-namespace APP\Meta;
+namespace APP\Dto;
 
 class Meta{
 	private $MetaSEQ;
