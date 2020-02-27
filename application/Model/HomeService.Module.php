@@ -1,7 +1,7 @@
 <?php
 namespace APP\Model;
 
-class HomeService extends \APP\Core\Model
+class HomeService2 extends \APP\Core\Model
 {
-	
+
 }

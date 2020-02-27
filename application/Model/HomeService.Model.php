@@ -6,18 +6,19 @@ use APP\Dto\Meta;
 
 class HomeService extends Model
 {
+	/**
+	 * sql 예시
+	 * @return [type] [description]
+	 */
 	public function get_boardList(){
+		//옵션을 넣었기떄문에 예외 옵션가능
 		$SQL		=	"SELECT * FROM MetaInfo";
-		$query		=	$this->db->prepare($SQL);
-        $query->execute();
+		$msg		=	$this->run($SQL);
 
-		$Count = $query->rowCount();
-		if ($Count  > 0){
-$query->setFetchMode(PDO::FETCH_CLASS, "Meta");
-return $obj = $query->fetchAll();
-
-}
-
-		return $query->fetchAll();
+		if($msg->get_result()){
+			return $msg->get_data()->fetchAll();
+		} else {
+			return $msg->get_msg();
+		}
 	}
 }

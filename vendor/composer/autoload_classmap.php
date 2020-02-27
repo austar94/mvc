@@ -12,8 +12,10 @@ return array(
     'APP\\Controller\\SongsController' => $baseDir . '/application/Controller/SongsController.php',
     'APP\\Core\\Application' => $baseDir . '/application/Core/Application.php',
     'APP\\Core\\Controller' => $baseDir . '/application/Core/Controller.php',
+    'APP\\Core\\Model' => $baseDir . '/application/Core/Model.php',
     'APP\\Core\\Router' => $baseDir . '/application/Core/Router.php',
     'APP\\Dto\\BoardResult' => $baseDir . '/application/Dto/BoardResult.php',
-    'APP\\Model\\HomeService' => $baseDir . '/application/Model/HomeService.Module.php',
+    'APP\\Dto\\DBInfo' => $baseDir . '/application/Dto/DBInfo.dto.php',
+    'APP\\Model\\HomeService' => $baseDir . '/application/Model/HomeService.Model.php',
     'APP\\Service\\HomeService' => $baseDir . '/application/Service/HomeService.php',
 );

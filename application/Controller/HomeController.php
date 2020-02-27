@@ -6,7 +6,6 @@ use APP\Model\HomeService;
 
 class HomeController extends Controller
 {
-
     //디폴트 페이지
     public function index()
     {
@@ -17,6 +16,7 @@ class HomeController extends Controller
 		/* $this->view('view/home/header'); */
         $HomeService	=	new HomeService();
         $list           =   $HomeService->get_boardList();
+
         print_r($list);
 
 		$this->header();

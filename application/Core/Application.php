@@ -2,6 +2,7 @@
 namespace APP\Core;
 
 use APP\Router;
+use APP\Controller\ErrorController;
 
 class Application extends \Exception
 {
@@ -85,8 +86,8 @@ class Application extends \Exception
 			// 	$e->getTraceAsString()
 			// );
 
-			$page = new \APP\Controller\ErrorController();
-			$page->index($e);
+			$errCon            =   new ErrorController();
+			$errCon->index($e);
 		}
 	}
 
