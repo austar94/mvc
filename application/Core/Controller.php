@@ -11,7 +11,7 @@ class Controller extends \Exception
 		//잘 작동함..
 		// throw new \Exception("로그인이 필요한 페이지입니다.");
 	}
-	
+
 	//이거 왜 컨트롤쪽에..?
 	function view($path, $data = []) {
 		extract($data, EXTR_SKIP);
@@ -20,10 +20,10 @@ class Controller extends \Exception
 		if (is_readable($file)) {
             require $file;
         } else {
-            throw new \Exception("$file not found");
+            throw new \Exception("해당하는 페이지를 찾지 못했습니다.");
         }
 	}
-	
+
 	//헤더
 	function header(){
 		require APP . 'view/_templates/header.php';

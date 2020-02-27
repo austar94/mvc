@@ -12,7 +12,7 @@ class DBInfo{
 		$this->dbHost				=	'localhost';
 		$this->dbName				=	'OneToss';
 		$this->dbID					=	'root';
-		$this->dbPort				=	'3306'; 
+		$this->dbPort				=	'3306';
 		$this->dbPWD				=	'ekffur32!';
 		$this->dbType				=	'mysql';
 	}
@@ -36,5 +36,8 @@ class DBInfo{
 	public function get_dbPWD(){
 		return $this->dbPWD;
 	}
+
+	public function get_dbType(){
+		return $this->dbType;
+	}
 }
-?>

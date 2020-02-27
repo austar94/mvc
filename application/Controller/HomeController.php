@@ -1,12 +1,12 @@
 <?php
 namespace APP\Controller;
 
-use APP\Dto\BoardResult;
+use APP\Core\Controller;
 use APP\Model\HomeService;
 
-class HomeController extends \APP\Core\Controller
+class HomeController extends Controller
 {
-	
+
     //디폴트 페이지
     public function index()
     {
@@ -15,17 +15,21 @@ class HomeController extends \APP\Core\Controller
 		require APP . 'view/_templates/footer.php'; */
 
 		/* $this->view('view/home/header'); */
+        $HomeService	=	new HomeService();
+        $list           =   $HomeService->get_boardList();
+        print_r($list);
+
 		$this->header();
 		$this->view('view/home/index');
 		$this->footer();
 		//$this->view('view/_templates/footer');
     }
-   
+
 	//게시판 메인
     public function list($pno = 1)
     {
 		$HomeService		=	new HomeService();
-		
+
 		$search				=	array(
 			'isUse'				=>	1,
 			'pno'				=>	$pno,
@@ -39,7 +43,7 @@ class HomeController extends \APP\Core\Controller
         require APP . 'view/home/example_one.php';
         require APP . 'view/_templates/footer.php';
 	}
-	
+
 	//게시판 리스트 POST 형식
 	public function post_list()
     {
@@ -65,13 +69,13 @@ class HomeController extends \APP\Core\Controller
 
     }
 
-    
+
     public function exampleTwo()
     {
         require APP . 'view/_templates/header.php';
         require APP . 'view/home/example_two.php';
         require APP . 'view/_templates/footer.php';
 	}
-	
-	
+
+
 }

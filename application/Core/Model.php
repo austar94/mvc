@@ -8,16 +8,18 @@ use APP\Dto\DBInfo;
 class Model
 {
     /**
-     * @var null Database Connection
+     * db파라미터
+     * @var [type]
      */
-	public $db = null;
-	public $DB_HOST		=	'';
-	public $DB_NAME		=	'';
-	public $DB_USER		=	'';
-	public $DB_PASS		=	'';
+	public $db					=	null;			//공통사용으로 private를  사용하면 안됨
+	private $DB_HOST			=	'';
+	private $DB_NAME			=	'';
+	private $DB_USER			=	'';
+	private $DB_PASS			=	'';
+	private $DB_TYPE			=	'';
 
     /**
-     * Whenever model is created, open a database connection.
+     * db 연결
      */
     function __construct()
     {
@@ -27,33 +29,31 @@ class Model
 			$this->DB_NAME	=	$DBInfo->get_dbName();
 			$this->DB_USER	=	$DBInfo->get_dbID();
 			$this->DB_PASS	=	$DBInfo->get_dbPWD();
+			$this->DB_TYPE	= 	$DBInfo->get_dbType();
 
             self::openDatabaseConnection();
         } catch (\PDOException $e) {
-            exit('Database connection could not be established.');
+			throw new \Exception("데이터베이스 연결에 실패하였습니다.");
+            // exit('Database connection could not be established.');
         }
     }
 
     /**
-     * Open the database connection with the credentials from application/config/config.php
+     * db 접속
+     * @return [type] [description]
      */
     private function openDatabaseConnection()
     {
-        // set the (optional) options of the PDO connection. in this case, we set the fetch mode to
-        // "objects", which means all results will be objects, like this: $result->user_name !
-        // For example, fetch mode FETCH_ASSOC would return results like this: $result["user_name] !
-        // @see http://www.php.net/manual/en/pdostatement.fetch.php
-        $options = array(PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_OBJ, PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING);
-        
+		$options			=	'PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION';
+        // $options			=	array(PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_OBJ, PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING);
+
         // setting the encoding is different when using PostgreSQL
-        if (DB_TYPE == "pgsql") {
-            $databaseEncodingenc = " options='--client_encoding=utf8'";
+        if ($this->DB_TYPE == "pgsql") {
+            $databaseEncodingenc =	" options='--client_encoding=utf8'";
         } else {
-            $databaseEncodingenc = "; charset=utf8";
+            $databaseEncodingenc =	"; charset=utf8";
         }
 
-        // generate a database connection, using the PDO connector
-        // @see http://net.tutsplus.com/tutorials/php/why-you-should-be-using-phps-pdo-for-database-access/
-        $this->db = new PDO(DB_TYPE . ':host=' . DB_HOST . ';dbname=' . DB_NAME . $databaseEncodingenc, DB_USER, DB_PASS, $options);
+        $this->db			=	new PDO($this->DB_TYPE . ':host=' . $this->DB_HOST . ';dbname=' . $this->DB_NAME . $databaseEncodingenc, $this->DB_USER, $this->DB_PASS, $options);
     }
 }

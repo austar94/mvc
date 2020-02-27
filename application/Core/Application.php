@@ -2,7 +2,6 @@
 namespace APP\Core;
 
 use APP\Router;
-/* use APP\Core\Exception; */
 
 class Application extends \Exception
 {
@@ -88,7 +87,6 @@ class Application extends \Exception
 
 			$page = new \APP\Controller\ErrorController();
 			$page->index($e);
-
 		}
 	}
 
