@@ -6,23 +6,24 @@ use APP\Model\HomeService;
 
 class HomeController extends Controller
 {
+    //로그인이 필요한 페이지라면??
+    public function __construct()
+    {
+
+	}
+
     //디폴트 페이지
     public function index()
     {
-       /*  require APP . 'view/_templates/header.php';
-        require APP . 'view/home/index.php';
-		require APP . 'view/_templates/footer.php'; */
-
-		/* $this->view('view/home/header'); */
         $HomeService	=	new HomeService();
-        $list           =   $HomeService->get_boardList();
-
-        print_r($list);
+        $search         =   array(
+            'OrderSEQ'      =>  '20200227202628000125'
+        );
+        $msg            =   $HomeService->get_userList();
 
 		$this->header();
-		$this->view('view/home/index');
+		$this->view('view/home/index', $msg->get_data());
 		$this->footer();
-		//$this->view('view/_templates/footer');
     }
 
 	//게시판 메인

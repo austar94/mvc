@@ -28,9 +28,12 @@ class ComposerStaticInit83b0cf73829ace4b565ad1529f3e7074
         'APP\\Core\\Application' => __DIR__ . '/../..' . '/application/Core/Application.php',
         'APP\\Core\\Controller' => __DIR__ . '/../..' . '/application/Core/Controller.php',
         'APP\\Core\\Model' => __DIR__ . '/../..' . '/application/Core/Model.php',
+        'APP\\Core\\MonoLog' => __DIR__ . '/../..' . '/application/Core/MonoLog.php',
         'APP\\Core\\Router' => __DIR__ . '/../..' . '/application/Core/Router.php',
         'APP\\Dto\\BoardResult' => __DIR__ . '/../..' . '/application/Dto/BoardResult.php',
         'APP\\Dto\\DBInfo' => __DIR__ . '/../..' . '/application/Dto/DBInfo.dto.php',
+        'APP\\Dto\\Message' => __DIR__ . '/../..' . '/application/Dto/Message.dto.php',
+        'APP\\Dto\\Meta' => __DIR__ . '/../..' . '/application/Dto/Meta.dto.php',
         'APP\\Model\\HomeService' => __DIR__ . '/../..' . '/application/Model/HomeService.Model.php',
         'APP\\Service\\HomeService' => __DIR__ . '/../..' . '/application/Service/HomeService.php',
     );

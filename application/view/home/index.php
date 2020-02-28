@@ -1,4 +1,5 @@
 <div class="container">
+    <?= $OrderSEQ?>
     <textarea id="before"></textarea>
 	<br>
 	<button id="textchange">빈칸제거</button>
@@ -17,7 +18,7 @@
 
 		$('#same').text('');
 
-		//전체배열을 확인하고 동일한 값이 있을 경우 이전내용과 동일 표시 
+		//전체배열을 확인하고 동일한 값이 있을 경우 이전내용과 동일 표시
 		for(var i = 0; i < array_after.length; i++){
 			var after_		=	array_after[i];
 
@@ -35,7 +36,7 @@
 		if(array_after.length > 10){
 			array_after.shift();
 		}
-		
+
 		$('#after').val(before);
 	});
 </script>
