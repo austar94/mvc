@@ -12,6 +12,8 @@ class HomeController extends Controller
 
 	}
 
+
+
     //디폴트 페이지
     public function index()
     {
@@ -46,28 +48,15 @@ class HomeController extends Controller
 	}
 
 	//게시판 리스트 POST 형식
-	public function post_list()
+	public function post_get_userList()
     {
-		$HomeService		=	new HomeService();
-		$result				=	new BoardResult();
+        $HomeService	=	new HomeService();
+        $search         =   array(
+            'OrderSEQ'      =>  '20200227202628000125'
+        );
+        $msg            =   $HomeService->get_userList();
 
-		$pno				=	intval($_POST['pno']);
-
-		try{
-			$search			=	array(
-				'pno'			=>	$pno
-			);
-			$result			=	$HomeService->get_boardList($search);
-		}
-		catch (Exception $e){
-			//게시판 조회 실패
-			$result.setErrCd(-1);
-		}
-
-		$result				=	new BoardResult();
-
-		echo json_encode($result);
-
+		echo json_encode($msg->get_data());
     }
 
 

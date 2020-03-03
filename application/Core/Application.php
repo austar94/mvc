@@ -22,6 +22,7 @@ class Application extends \Exception
 
 		try{
             //각 접근에 따른 분류
+            $this->Router->check_method();                  //해당하는 method만 허용 ngix에서 기본으로 막고있음
 			$this->Router->splitUrl();
             $this->Router->find_path();
 		} catch (\Exception  $e){

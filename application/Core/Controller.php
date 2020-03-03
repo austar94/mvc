@@ -12,6 +12,7 @@ class Controller extends \Exception
 		// throw new \Exception("로그인이 필요한 페이지입니다.");
 	}
 
+
 	//이거 왜 컨트롤쪽에..?
 	function view($path, $data = []) {
 		extract($data, EXTR_SKIP);
