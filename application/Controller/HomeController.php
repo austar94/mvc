@@ -9,7 +9,8 @@ class HomeController extends Controller
     //로그인이 필요한 페이지라면??
     public function __construct()
     {
-
+        //path 체크
+        
 	}
 
 
