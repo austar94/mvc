@@ -10,7 +10,7 @@ class HomeController extends Controller
     public function __construct()
     {
         //path 체크
-        
+
 	}
 
 
@@ -51,6 +51,9 @@ class HomeController extends Controller
 	//게시판 리스트 POST 형식
 	public function post_get_userList()
     {
+        $asdf   =   $this->post('ASDF');
+        echo $asdf;
+
         $HomeService	=	new HomeService();
         $search         =   array(
             'OrderSEQ'      =>  '20200227202628000125'

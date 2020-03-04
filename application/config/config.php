@@ -1,7 +1,7 @@
 <?php
 
 //세션설정
-@session_save_path($_SERVER['DOCUMENT_ROOT'] . '/_session');												//	이 옵션에서 LG U+ 전자결제 에러.
+@session_save_path($_SERVER['DOCUMENT_ROOT'] . '/../_session');												//	이 옵션에서 LG U+ 전자결제 에러.
 @session_cache_limiter('nocache, must-revalidate');															//	캐시가 유지되어 폼값이 보존
 @ini_set('session.gc_maxlifetime', 43200);																	//	초 - 세션 만료시간을 12시간으로 설정
 @ini_set('session.cache_expire', 43200);																	//	12시간
@@ -36,4 +36,11 @@ define('URL_SUB_FOLDER', str_replace(URL_PUBLIC_FOLDER, '', dirname($_SERVER['SC
 define('URL', URL_PROTOCOL . URL_DOMAIN . URL_SUB_FOLDER);													//현재 페이지에대한 URL 정의
 
 
-//에러 설정
+//설정값을 워낙 자주써서..
+define('REQUEST_URI', $_SERVER['REQUEST_URI']);
+define('REQUEST_METHOD', $_SERVER['REQUEST_METHOD']);
+
+//csrf 검증
+define('CHECK_CSRF_TOKEN', 'N');                                                                       //CSRF POST TOKEN 확인 체크 여부
+define('CSRF_TOKEN_NAME', '_csrf');                                                                         //토큰 방식 이용시 토큰 전달 명
+define('CHECK_CSRF_REFERER', 'N');                                                                     //CSRF POST HTTP_REFERER 확인

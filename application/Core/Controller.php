@@ -1,7 +1,7 @@
 <?php
 namespace APP\Core;
 
-use APP\Router;
+use APP\Libs\Helper;
 
 class Controller extends \Exception
 {
@@ -12,6 +12,40 @@ class Controller extends \Exception
 		// throw new \Exception("로그인이 필요한 페이지입니다.");
 	}
 
+	/**
+	 * get xss방지
+	 * @param  string  $param    [description]
+	 * @param  integer $isFilter [description]
+	 * @return [type]            [description]
+	 */
+	function get($param = '', $isFilter = 0){
+		$Helper			=	new Helper();
+		if($isFilter) foreach($_GET as $key=>$get) $_GET[$key] = $Helper->allTags($get);
+
+		if($param){
+			return $_GET[$param] ? $_GET[$param] : '';
+		} else {
+			return $_GET;
+		}
+	}
+
+	/**
+	 * post xss방지
+	 * @param  string  $param    [description]
+	 * @param  integer $isFilter [description]
+	 * @return [type]            [description]
+	 */
+	function post($param = '', $isFilter = 0){
+		$Helper			=	new Helper();
+
+		if($isFilter) foreach($_POST as $key=>$get) $_POST[$key] = $Helper->allTags($post);
+
+		if($param){
+			return $_POST[$param] ? $_POST[$param] : '';
+		} else {
+			return $_POST;
+		}
+	}
 
 	//이거 왜 컨트롤쪽에..?
 	function view($path, $data = []) {
