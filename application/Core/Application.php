@@ -12,7 +12,6 @@ class Application extends \Exception
     public function __construct()
     {
         $this->Router                   =   new Router();
-        $this->Auth                     =   new Auth();
 	}
 
 	/**
@@ -26,7 +25,7 @@ class Application extends \Exception
             //각 접근에 따른 분류
             $this->Router->check_method();                  //해당하는 method만 허용 ngix에서 기본으로 막고있음
 			$this->Router->splitUrl();
-            $this->Auth->check_auth();                      //split된 url과 action으로 접근 가능한 페이지 체크
+            $this->Router->check_auth();                      //split된 url과 action으로 접근 가능한 페이지 체크
             $this->Router->find_path();
 
 		} catch (\Exception  $e){

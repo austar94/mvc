@@ -170,7 +170,7 @@ class Model
    				 }
 
 				 $stmt->execute();
-				 if($backKey) $msg->set_code($stmt->lastInsertId());
+				 if($backKey) $msg->set_code($this->db->lastInsertId());
 				 $row			=	$stmt->fetch();
 			 } else {
 				 $row 			=	$this->db->query($sql);

@@ -15,6 +15,10 @@ class Router
 	//기타 파라미터
 	public $url_params;
 
+	public function check_auth(){
+		
+	}
+
 	/**
 	 * method 확인
 	 * @return [type] [description]
