@@ -143,7 +143,7 @@ class Model
 	 * @param  string $isLog 로그 작성여부
 	 * @return array       sql 결과값
 	 */
-	public function run_once($sql, $args = '', $isLog = 0)
+	public function run_once($sql, $args = '', $isLog = 0, $backKey = '')
     {
 		$msg					=	new Message();
 		$MonoLog				=	new MonoLog();
@@ -170,6 +170,7 @@ class Model
    				 }
 
 				 $stmt->execute();
+				 if($backKey) $msg->set_code($stmt->lastInsertId());
 				 $row			=	$stmt->fetch();
 			 } else {
 				 $row 			=	$this->db->query($sql);

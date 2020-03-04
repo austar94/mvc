@@ -192,4 +192,8 @@ class Router
 			 $this->url_params			=	array_values($url);
          }
  	}
+
+	public function get_url_controller(){
+		return $this->url_controller;
+	}
 }

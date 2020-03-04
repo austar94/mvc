@@ -10,7 +10,6 @@ class HomeController extends Controller
     public function __construct()
     {
         //path 체크
-
 	}
 
 
