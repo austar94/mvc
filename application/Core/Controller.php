@@ -12,6 +12,22 @@ class Controller extends \Exception
 		// throw new \Exception("로그인이 필요한 페이지입니다.");
 	}
 
+
+	/**
+	 * 로그인 상태 및 권한 확인
+	 * @param  integer $userType 유저 권한
+	 * @return [type]            [description]
+	 */
+	function checkAuth($userType = 1){
+		$Helper			=	new Helper();
+
+		if(!$_SESSION['userType']){
+			throw new \Exception ('로그인 후 이용 가능합니다.', 401);
+		} else if($_SESSION['userType'] != $userType){
+			throw new \Exception ('해당 페이지를 이용할 수있는 권한이 없습니다.', 401);
+		}
+	}
+
 	/**
 	 * get xss방지
 	 * @param  string  $param    [description]

@@ -17,6 +17,7 @@ class HomeController extends Controller
     //디폴트 페이지
     public function index()
     {
+        $this->checkAuth();
         $HomeService	=	new HomeService();
         $search         =   array(
             'OrderSEQ'      =>  '20200227202628000125'

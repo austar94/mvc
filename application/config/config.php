@@ -29,7 +29,7 @@ error_reporting(E_ALL & ~E_NOTICE);				//에러 기록
 
 
 //url 정의
-define('URL_PUBLIC_FOLDER', 'public');																		//노출 가능한 폴더
+define('URL_PUBLIC_FOLDER', 'public');          //노출 가능한 폴더
 define('URL_PROTOCOL', '//');
 define('URL_DOMAIN', $_SERVER['HTTP_HOST']);
 define('URL_SUB_FOLDER', str_replace(URL_PUBLIC_FOLDER, '', dirname($_SERVER['SCRIPT_NAME'])));				//하위폴더 설정

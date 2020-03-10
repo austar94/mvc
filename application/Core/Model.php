@@ -36,7 +36,7 @@ class Model
             self::openDatabaseConnection();
         } catch (\PDOException $e) {
 			$MonoLog				=	new MonoLog();
-			$MonoLog->log_info('===============MonoLog===============');
+			$MonoLog->log_info('==============================');
 			$MonoLog->log_info("데이터베이스 연결에 실패하였습니다. " . $e->getMessage() . $e->getCode());
 			// throw new \Exception("데이터베이스 연결에 실패하였습니다. " . $e->getMessage() . $e->getCode());
 			throw new \Exception("데이터베이스 연결에 실패하였습니다.");

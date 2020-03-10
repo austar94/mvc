@@ -5,37 +5,73 @@ namespace APP\Libs;
 class Helper
 {
     //	remove AllTags
-function allTags($data)
-{
-	if ($data) {
-		if(is_array($data)) {
-			foreach($data as $key => $value){
-				$data[$key]			=	strip_tags(addslashes(trim($value)));
+	function allTags($data)
+	{
+		if ($data) {
+			if(is_array($data)) {
+				foreach($data as $key => $value){
+					$data[$key]			=	strip_tags(addslashes(trim($value)));
+				}
+				return $data;
+			} else {
+				return strip_tags(addslashes(trim($data)));
 			}
-			return $data;
 		} else {
-			return strip_tags(addslashes(trim($data)));
+			return $data;
 		}
-	} else {
-		return $data;
 	}
-}
 
-function allStrip($data)
-{
-	if ($data) {
-		if(is_array($data)) {
-			foreach($data as $key => $value){
-				$data[$key]			=	stripslashes($value);
+	function allStrip($data)
+	{
+		if ($data) {
+			if(is_array($data)) {
+				foreach($data as $key => $value){
+					$data[$key]			=	stripslashes($value);
+				}
+				return $data;
+			} else {
+				return stripslashes($data);
 			}
-			return $data;
 		} else {
-			return stripslashes($data);
+			return $data;
 		}
-	} else {
-		return $data;
 	}
-}
+
+	/**
+	 * 페이지 이동 및 alert
+	 * @param  string $url   이동할 url
+	 * @param  string $msg   alert 메시지
+	 * @param  string $frame [description]
+	 * @return [type]        [description]
+	 */
+	public function goPage($url = '', $msg = '', $frame = '') {
+		if ($url == '') {
+			echo '<meta content="text/html" charset="utf-8">';
+			echo '<script>';
+			if ($msg != '') echo 'alert(\'' . $msg . '\');';
+			if ($frame == 'frame') {
+				echo 'parent.location.href = \'' . $_SERVER['HTTP_REFERER'] . '\'';
+			} else if ($frame == 'top') {
+				echo 'top.location.href = \'' . $_SERVER['HTTP_REFERER'] . '\'';
+			} else {
+				echo 'location.href = \'' . $_SERVER['HTTP_REFERER'] . '\'';
+			}
+			echo '</script>';
+		} else {
+			echo '<meta content="text/html" charset="utf-8">';
+			echo '<script>';
+			if ($msg != '') echo 'alert(\'' . $msg . '\');';
+			if ($frame == 'frame') {
+				echo 'parent.location.href = \'' . $url . '\';';
+			} else if ($frame == 'top') {
+				echo 'top.location.href = \'' . $url . '\';';
+			} else {
+				echo 'location.href = \'' . $url . '\';';
+			}
+			echo '</script>';
+		}
+		exit;
+	}
 
 
 /**
