@@ -1,12 +1,10 @@
 {
     "name": "austar94/mvc",
-    "description": "based MINI3",
     "type": "project",
     "license": "MIT",
     "authors": [
         {
-            "name": "star",
-            "email": "panique@firemail.de"
+            "name": "star"
         }
     ],
     "require": {

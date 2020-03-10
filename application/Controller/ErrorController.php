@@ -4,6 +4,10 @@ namespace APP\Controller;
 use APP\Core\MonoLog;
 use APP\Libs\Helper;
 
+/**
+ * 에러코드에 대한 상세
+ * https://ko.wikipedia.org/wiki/HTTP_%EC%83%81%ED%83%9C_%EC%BD%94%EB%93%9C
+ */
 class ErrorController
 {
     /**
@@ -43,10 +47,15 @@ class ErrorController
         $Helper			=	new Helper();
 
         switch ($e->getCode()) {
-            //401 : 권한없음
+            //401 : 로그인 안됨
             case '401':
                 //로그인페이지로 이동
                 $Helper->goPage('/auth', $e->getMessage());
+            break;
+            //403 : 유저 권한 부족
+            case '403':
+                //로그인페이지로 이동
+                $Helper->goBack($e->getMessage());
             break;
             //404 : 해당 페이지 없음
             case '404':

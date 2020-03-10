@@ -2,8 +2,29 @@
 
 namespace APP\Libs;
 
+use APP\Libs\Crypto;
 class Helper
 {
+
+	//복구 가능한 암호화
+	//	암호화
+	function encrypt($str) {
+		$crypto						=	new Crypto();
+		return $crypto->encrypt($str);
+	}
+
+	//	복호화
+	function decrypt($str) {
+		$crypto						=	new Crypto();
+		return $crypto->decrypt($str);
+	}
+
+	//복구 불가능한 암호화
+	function crypt_($password) {
+		$salt				=	'24$F07$R.gJb2U2N.FmZ4hPp1y2CN$';
+		return crypt($password, $salt);
+ 	}
+
     //	remove AllTags
 	function allTags($data)
 	{
@@ -70,6 +91,21 @@ class Helper
 			}
 			echo '</script>';
 		}
+		exit;
+	}
+
+	/**
+	 * 이전 페이지로 이동
+	 * @param  string $msg   [description]
+	 * @param  string $frame [description]
+	 * @return [type]        [description]
+	 */
+	public function goBack($msg = '', $frame = '') {
+		echo '<meta content="text/html" charset="utf-8">';
+		echo '<script>';
+		if ($msg != '') echo 'alert(\'' . $msg . '\');';
+		if ($frame == '') echo 'history.go(-1);';
+		echo '</script>';
 		exit;
 	}
 
