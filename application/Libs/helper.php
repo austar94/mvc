@@ -6,6 +6,22 @@ use APP\Libs\Crypto;
 class Helper
 {
 
+	function rsa_encrypt($plaintext, $public_key)
+	{
+    	// 공개키를 사용하여 암호화한다.
+
+    	$pubkey_decoded = @openssl_pkey_get_public($public_key);
+    	if ($pubkey_decoded === false) return false;
+
+    	$ciphertext = false;
+    	$status = @openssl_public_encrypt($plaintext, $ciphertext, $pubkey_decoded);
+    	if (!$status || $ciphertext === false) return false;
+
+    	// 암호문을 base64로 인코딩하여 반환한다.
+
+    	return base64_encode($ciphertext);
+	}
+
 	//복구 가능한 암호화
 	//	암호화
 	function encrypt($str) {
