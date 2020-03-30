@@ -4,7 +4,7 @@ namespace APP\Core;
 use APP\Core\Router;
 use APP\Controller\ErrorController;
 
-class Application extends \Exception
+class Application
 {
     private $Router;
     private $Auth;
@@ -25,8 +25,7 @@ class Application extends \Exception
             $this->Router->check_method();                  //해당하는 method만 허용 ngix에서 기본으로 막고있음
 			$this->Router->splitUrl();
             $this->Router->find_path();
-
-		} catch (\Exception  $e){
+		} catch (\Throwable $e){
 			$errCon            =   new ErrorController();
 			$errCon->index($e);
 		}

@@ -38,7 +38,7 @@ class Model
 			$MonoLog				=	new MonoLog();
 			$MonoLog->log_info('==============================');
 			$MonoLog->log_info("데이터베이스 연결에 실패하였습니다. " . $e->getMessage() . $e->getCode());
-			// throw new \Exception("데이터베이스 연결에 실패하였습니다. " . $e->getMessage() . $e->getCode());
+			// throw new \TypeError("데이터베이스 연결에 실패하였습니다. " . $e->getMessage() . $e->getCode());
 			throw new \Exception("데이터베이스 연결에 실패하였습니다.");
         }
     }
@@ -81,37 +81,17 @@ class Model
 		}
 
 		try {
-			//검색값이 존재할 경우
-			// if ($args) {
-			// 	$stmt			=	$this->db->prepare($sql);
-			// 	// $stmt->execute($args);
-			// 	// if($args){
-   			// 	 foreach ($args as $key => $value) {
-   			// 		 if(!$value['value']) continue;
-			//
-   			// 		 if($value['type'] == 'str'){
-   			// 			$stmt->bindParam(':'.$value['column'], $value['value'], PDO::PARAM_STR, $value['size']);
-   			// 		} else {
-   			// 			$stmt->bindParam(':'.$value['column'], $value['value'], PDO::PARAM_INT);
-   			// 		}
-   			// 	 }
-			//
-			// 	 $stmt->execute();
-			// 	 $rows			=	$stmt->fetchAll();
-			//  } else {
-			// 	 $rows 			=	$this->db->query($sql);
-			//  }
 			$stmt			=	$this->db->prepare($sql);
 			// $stmt->execute($args);
 			if($args){
 			 	foreach ($args as $key => $value) {
-				 	if(!$value['value']) continue;
-
-				 	if($value['type'] == 'str'){
-						$stmt->bindParam(':'.$value['column'], $value['value'], PDO::PARAM_STR, $value['size']);
-					} else {
-						$stmt->bindParam(':'.$value['column'], $value['value'], PDO::PARAM_INT);
-					}
+					if($value['type'] == 'str'){
+					   $stmt->bindParam(':'.$value['column'], $value['value'], PDO::PARAM_STR, $value['size']);
+				   } else if($value['type'] == 'int'){
+					   $stmt->bindParam(':'.$value['column'], $value['value'], PDO::PARAM_INT);
+				   } else if($value['type'] == 'text'){
+					   $stmt->bindParam(':'.$value['column'], $value['value'], PDO::PARAM_LOB);
+				   }
 				}
 			}
 
@@ -141,9 +121,11 @@ class Model
 	 * @param  string $sql  [sql 본문]
 	 * @param  array  $args [sql 검색값]
 	 * @param  string $isLog 로그 작성여부
+	 * @param  string $backKey insert시 키값 리턴 여부
+	 * @param  string $isFetch 리턴값 여부
 	 * @return array       sql 결과값
 	 */
-	public function run_once($sql, $args = '', $isLog = 0, $backKey = '')
+	public function run_once($sql, $args = '', $isLog = 0, $backKey = '', $isFetch = 1)
     {
 		$msg					=	new Message();
 		$MonoLog				=	new MonoLog();
@@ -160,24 +142,29 @@ class Model
 				// $stmt->execute($args);
 				// if($args){
    				 foreach ($args as $key => $value) {
-   					 if(!$value['value']) continue;
 
-   					 if($value['type'] == 'str'){
-   						$stmt->bindParam(':'.$value['column'], $value['value'], PDO::PARAM_STR, $value['size']);
-   					} else {
-   						$stmt->bindParam(':'.$value['column'], $value['value'], PDO::PARAM_INT);
-   					}
+					 if($value['type'] == 'str'){
+						$stmt->bindParam(':'.$value['column'], $value['value'], PDO::PARAM_STR, $value['size']);
+					} else if($value['type'] == 'int'){
+						$stmt->bindParam(':'.$value['column'], $value['value'], PDO::PARAM_INT);
+					} else if($value['type'] == 'text'){
+						$stmt->bindParam(':'.$value['column'], $value['value'], PDO::PARAM_LOB);
+					}
    				 }
 
 				 $stmt->execute();
 				 if($backKey) $msg->set_code($this->db->lastInsertId());
-				 $row			=	$stmt->fetch();
 			 } else {
-				 $row 			=	$this->db->query($sql);
+				 $stmt 			=	$this->db->query($sql);
+			 }
+
+			 if($isFetch == 1){
+				 $row			=	$stmt->fetch();
+				 $msg->set_data($row);
 			 }
 
 			$msg->set_result(1);
-			$msg->set_data($row);
+
 
 			if($isLog){
 				$MonoLog->log_info('result : ', $row);
@@ -194,7 +181,6 @@ class Model
 		}
     }
 
-
 	/**
 	 * 프로시저 값 + out 받기
 	 * @param  array  $sql   [sql[0] - 프로시저본문, sql[1] - out받는 부분]
@@ -202,7 +188,7 @@ class Model
 	 * @param  integer $isLog [로그여부]
 	 * @return array         [실행 결과값]
 	 */
-	function procedule_run($sql, $args = [], $isLog = 0){
+	function procedule_run($sql, $args = [], $isLog = 0, $isFetch = 0){
 		$msg				=	new Message();
 		$MonoLog			=	new MonoLog();
 
@@ -217,17 +203,23 @@ class Model
 			 $stmt			=	$this->db->prepare($sql[0]);
 			 if($args){
 				 foreach ($args as $key => $value) {
-					 if(!$value['value']) continue;
 
 					 if($value['type'] == 'str'){
 						$stmt->bindParam(':'.$value['column'], $value['value'], PDO::PARAM_STR, $value['size']);
-					} else {
+					} else if($value['type'] == 'int'){
 						$stmt->bindParam(':'.$value['column'], $value['value'], PDO::PARAM_INT);
+					} else if($value['type'] == 'text'){
+						$stmt->bindParam(':'.$value['column'], $value['value'], PDO::PARAM_LOB);
 					}
 				 }
 			 }
 			 $stmt->execute();
-			 $rows			=	$stmt->fetchAll();
+
+			 $rows				=	[];
+			 if($isFetch == 1){
+				 $rows			=	$stmt->fetchAll();
+			 }
+
 			 $stmt->closeCursor();
 			 $row			=	$this->db->query($sql[1])->fetch(PDO::FETCH_ASSOC);
 

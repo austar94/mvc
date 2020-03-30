@@ -23,18 +23,14 @@ class MonoLog{
 	 * 개발 중일시 DEV
 	 * 이외의 상황에서는 업체번호 사용
 	 */
-	public function __construct($channel = 'DEV', $dirPath = '/logs') {
-		//$Common					=	new Common();
+	public function __construct($channel = 'DEV', $dirPath = '/_log') {
 		$FileManager			=	new FileManager();
-		$mainPath				=	'/var/www/html/mvc/_log';
 
 		//log 파일 저장을 위한 해당 경로의 디렉터리 생성
-		// $msg = $FileManager->setMakeDir($_SERVER['DOCUMENT_ROOT'] . $dirPath, '', $channel, '', 'Ym');
-		$msg = $FileManager->setMakeDir($mainPath . $dirPath, '', $channel, '', 'Ym');
+		$msg = $FileManager->setMakeDir($_SERVER['DOCUMENT_ROOT'] .'/..'. $dirPath, $channel, '', 'Ym');
 
 		//경로 및 채널 준비
-		// $this->path				=	$Common->DOCUMENTROOT() . $dirPath .'/' . $channel . '/' . date('Y') . '/' . date('Ym') . '/' . date('Ymd')  . '.log';
-		$this->path				=	$mainPath . $dirPath .'/' . $channel . '/' . date('Y') . '/' . date('Ym') . '/' . date('Ymd')  . '.log';
+		$this->path				=	$_SERVER['DOCUMENT_ROOT'] .'/..'. $dirPath .'/' . $channel . '/' . date('Y') . '/' . date('Ym') . '/' . date('Ymd')  . '.log';
 		$this->log				=	new Logger($channel);
 
 		//로그 기록할때마다 호출하면 기록이 누적되어 최초 한번만 선언
@@ -44,7 +40,11 @@ class MonoLog{
 
 	public function log_info($msg, $values = ''){
 		if($values){
-			$this->log->info($msg, $values);
+			if(is_array($values)){
+				$this->log->info($msg, $values);
+			} else {
+				$this->log->info($msg . ', values : ' , $values);
+			}
 		} else {
 			$this->log->info($msg);
 		}
@@ -53,7 +53,11 @@ class MonoLog{
 
 	public function log_warning($msg, $values = ''){
 		if($values){
-			$this->log->warning($msg, $values);
+			if(is_array($values)){
+				$this->log->warning($msg, $values);
+			} else {
+				$this->log->warning($msg . ', values : ' , $values);
+			}
 		} else {
 			$this->log->warning($msg);
 		}
@@ -61,9 +65,32 @@ class MonoLog{
 
 	public function log_error($msg, $values = ''){
 		if($values){
-			$this->log->error($msg, $values);
+			if(is_array($values)){
+				$this->log->error($msg, $values);
+			} else {
+				$this->log->error($msg . ', values : ' , $values);
+			}
 		} else {
 			$this->log->error($msg);
+		}
+	}
+
+	/**
+	 * 예외처리용 로그
+	 * @param  Throwable$e [description]
+	 * @return [type]       [description]
+	 */
+	public function log_exceptionErr(\Throwable$e){
+		if(SYS_DEBUG){
+			$this->log->error('============================================================');
+			$this->log->error('error Code : ' . $e->getCode());
+			$this->log->error('error Message : ' . $e->getMessage());
+			$this->log->error('error File : ' . $e->getFile());
+			$this->log->error('error Line : ' . $e->getLine());
+			$this->log->error('error Trace : ', $e->getTrace());
+			$this->log->error('error Previous : ' . $e->getPrevious());
+			$this->log->error('error TraceAsString : ' . $e->getTraceAsString());
+			$this->log->error('============================================================');
 		}
 	}
 }

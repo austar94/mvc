@@ -3,6 +3,7 @@ namespace APP\Core;
 
 use APP\Controller\HomeController;
 use APP\config\routes;
+use APP\Core\MonoLog;
 
 class Router
 {
@@ -21,7 +22,7 @@ class Router
 	 */
 	public function check_method(){
 		if(REQUEST_METHOD != 'POST' && REQUEST_METHOD != 'GET'){
-			throw new \Exception ('요청할 수 없는 method입니다. ', 405);
+			throw new \Exception('요청할 수 없는 method입니다. ', 405);
 		}
 	}
 
@@ -30,39 +31,49 @@ class Router
 	 * @return [type] [description]
 	 */
 	public function find_path(){
-		//baseController 설정
-		if (!$this->url_controller) {
-			switch (REQUEST_METHOD) {
-				case 'GET':
-					$page							=	new HomeController();
-					$page->index();
+		try {
+			//baseController 설정
+			if (!$this->url_controller) {
+				switch (REQUEST_METHOD) {
+					case 'GET':
+						$page							=	new HomeController();
+						$page->index();
+						break;
+					default:
+						throw new \Exception('잘못된 요청입니다.', 405);
 					break;
-				default:
-					throw new \Exception ('잘못된 요청입니다. ');
-				break;
+				}
 			}
-		}
-		//전달받은 controller 에 맞는 컨트롤 파일이 존재하는지 확인
-		else if (file_exists(APP . 'Controller/' . ucfirst($this->url_controller) . 'Controller.php')) {
-			//전달받은 controller의 action(function)이 존재하는지 확인
-			//post일경우와 get일 경우를 나눔
-			switch (REQUEST_METHOD) {
-				case 'GET':
-					$this->check_get_csrf();
-					$this->get_path();
+			//전달받은 controller 에 맞는 컨트롤 파일이 존재하는지 확인
+			else if (file_exists(APP . 'Controller/' . ucfirst($this->url_controller) . 'Controller.php')) {
+				//전달받은 controller의 action(function)이 존재하는지 확인
+				//post일경우와 get일 경우를 나눔
+				switch (REQUEST_METHOD) {
+					case 'GET':
+						$this->check_get_csrf();
+						$this->get_path();
+						break;
+					case 'POST':
+						$this->check_post_csrf();
+						$this->post_path();
+						break;
+					default:
+						throw new \Exception('잘못된 요청입니다.', 405);
 					break;
-				case 'POST':
-					$this->check_post_csrf();
-					$this->post_path();
-					break;
-				default:
-					throw new \Exception ('잘못된 요청입니다. ');
-				break;
+				}
 			}
-		}
-		//전달받은 컨트롤러 정보의 파일이 존재하지 않을경우 에러 사이트로 이동
-		else {
-			throw new \Exception ('해당하는 페이지를 찾을 수 없습니다. ', 404);
+			//전달받은 컨트롤러 정보의 파일이 존재하지 않을경우 에러 사이트로 이동
+			else {
+				throw new \Exception('해당하는 페이지를 찾을 수 없습니다. ', 404);
+			}
+		} catch (\Throwable $e) {
+			$MonoLog			=	new MonoLog();
+			$MonoLog->log_exceptionErr($e);
+			if($e->getCode()){
+				throw new \Exception($e->getMessage(), $e->getCode());
+			} else {
+				throw new \Exception('요청하신 페이지를 찾을 수 없습니다.', '404');
+			}
 		}
 	}
 
@@ -89,15 +100,15 @@ class Router
 		//token 방식 사용할 경우
 		if(CHECK_CSRF_TOKEN == 'Y'){
 			//post로 전달된 토큰값 확인 후 세션에 저장된 현재 페이지의 토큰값과 비교
-			if(!$_POST['CSRF_TOKEN_NAME']) throw new \Exception ('잘못된 요청입니다. ' . REQUEST_URI);
-			if($_POST['CSRF_TOKEN_NAME'] != $_SESSION[CSRF_TOKEN_NAME][URL]) throw new \Exception ('잘못된 요청입니다. ' . REQUEST_URI);
+			if(!$_POST['CSRF_TOKEN_NAME']) throw new \Exception('잘못된 요청입니다.', 405);
+			if($_POST['CSRF_TOKEN_NAME'] != $_SESSION[CSRF_TOKEN_NAME][URL]) throw new \Exception('잘못된 요청입니다.', 405);
 		}
 
 		//HTTP_REFERER 방식 사용할 경우
 		//이전 페이지를 가지고있는지 확인하고 이전 페이지가 존재할 경우 현재 도메인과 비교하여 다를경우 돌려보냄
 		if(CHECK_CSRF_REFERER == 'Y'){
-			if(!parse_url($_SERVER['HTTP_REFERER'], PHP_URL_HOST)) throw new \Exception ('잘못된 요청입니다. ' . REQUEST_URI);
-			if(parse_url($_SERVER['HTTP_REFERER'], PHP_URL_HOST) != URL_DOMAIN) throw new \Exception ('잘못된 요청입니다. ' . REQUEST_URI);
+			if(!parse_url($_SERVER['HTTP_REFERER'], PHP_URL_HOST)) throw new \Exception('잘못된 요청입니다.', 405);
+			if(parse_url($_SERVER['HTTP_REFERER'], PHP_URL_HOST) != URL_DOMAIN) throw new \Exception('잘못된 요청입니다.', 405);
 		}
 	}
 
@@ -129,7 +140,7 @@ class Router
 		}
 		//controller는 존재하지만 해당 action(function)이 존재하지 않을경우 post의 경우 반환을 중지한ㄴ다.
 		else {
-			throw new \Exception ('요청하신 페이지를 찾지 못했습니다. ');
+			throw new \Exception('요청하신 페이지를 찾지 못했습니다. ', 404);
 		}
 	}
 
@@ -167,11 +178,19 @@ class Router
 				}
 				//cation(function)값이 들어 왔지만 해당 action(function)은 존재하지 않기에 존재하지 않은 페이지를 호출한 것이므로 오류페이지로 이동
 				else {
-					throw new \Exception ('해당하는 페이지를 찾을 수 없습니다. ', 404);
+					throw new \Exception('해당하는 페이지를 찾을 수 없습니다. ', 404);
 				}
 			}
-		} catch (\Exception $e) {
-			throw new \Exception ('해당하는 페이지를 찾을 수 없습니다. ', 404);
+		} catch (\TypeError $e){
+			throw new \Exception('잘못된 접근입니다.', 404);
+		} catch (\Throwable $e) {
+			$MonoLog			=	new MonoLog();
+			$MonoLog->log_exceptionErr($e);
+			if($e->getCode()){
+				throw new \Exception($e->getMessage(), $e->getCode());
+			} else {
+				throw new \Exception('요청하신 페이지를 찾을 수 없습니다.', 404);
+			}
 		}
 	}
 
