@@ -1,0 +1,998 @@
+@media (max-width: 1080px) {
+  .mobile {
+    display: block;
+  }
+  .web {
+    display: none;
+  }
+  .inner {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 20px;
+  }
+  .container {
+    min-width: 100%;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 289px;
+  }
+  header .header__wrap nav.gnb {
+    display: none;
+  }
+  header .header__wrap {
+    height: 50px;
+  }
+  header .header__wrap .sub__menu {
+    display: none;
+  }
+  header.active .header__wrap a.mobile-btn {
+    display: none;
+  }
+  header.active .header__wrap a.mobile-btn.type-close {
+    display: block;
+  }
+  header .header__wrap a.mobile-btn {
+    display: block;
+  }
+  header .header__wrap h1.logo {
+    left: 20px;
+  }
+  header .header__wrap h1.logo a {
+    width: 25px;
+    height: 27px;
+  }
+  section.main__img__banner {
+    background-color: #fff;
+    height: auto;
+  }
+  section.main__img__banner .txt-box {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    white-space: nowrap;
+  }
+  section.main__img__banner .txt-box .top-txt {
+    font-size: 25px;
+    line-height: 45px;
+    letter-spacing: -0.55px;
+  }
+  section.main__img__banner .txt-box .mid-txt {
+    padding: 0 0 20px;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 45px;
+    letter-spacing: -0.8px;
+  }
+  section.main__img__banner .txt-box .mid-txt b {
+    color: #eb6108;
+  }
+  section.main__img__banner .txt-box .bottom-txt {
+    line-height: 50px;
+    font-size: 15px;
+    letter-spacing: -0.35px;
+  }
+  section.main__visual .main__visual__bg .intro-box {
+    padding: 29px 0 23.5px;
+  }
+  section.main__visual .main__visual__bg .intro-box .top-txt {
+    font-size: 33px;
+    line-height: 42px;
+    letter-spacing: -0.75px;
+    font-weight: 700;
+  }
+  section.main__visual .main__visual__bg .intro-box .img-txt {
+    padding: 7.5px 0 20px;
+  }
+  section.main__visual .main__visual__bg .intro-box .img-txt img {
+    width: 240.5px;
+  }
+  section.main__visual .main__visual__bg .intro-box .bottom-txt {
+    line-height: 17px;
+    font-size: 12px;
+    letter-spacing: -0.275px;
+  }
+  section.main__visual .main__visual__bg .img-box {
+    padding-left: 47.5px;
+    padding-top: 42px;
+    padding-bottom: 20px;
+  }
+  section.main__visual .main__visual__bg .img-box img {
+    width: 193px;
+  }
+  section.main__visual .main__visual__bg .visual__menu {
+    position: static;
+    font-size: 0;
+  }
+  section.main__visual .main__visual__bg {
+    background: none;
+    height: auto;
+  }
+  section.main__visual .main__visual__bg .visual__menu .txt {
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: -0.275px;
+    padding-bottom: 10px;
+  }
+  section.main__visual .main__visual__bg .visual__menu .menu-btn {
+    width: 130px;
+    height: 38px;
+    font-size: 15px;
+    letter-spacing: -0.35px;
+  }
+  .main__txt__banner .main__txt__banner__box {
+    padding: 50px 20px;
+  }
+  .main__txt__banner .main__txt__banner__box .top-box {
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: -0.45px;
+  }
+  .main__txt__banner .main__txt__banner__box .bottom-box {
+    padding-top: 20px;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: -0.35px;
+  }
+  section.main__nohow .nohow__wrap .list-box ul li {
+    width: 100%;
+  }
+  section.main__nohow .nohow__wrap .list-box ul li + li {
+    margin: 0;
+    margin-top: 35px;
+  }
+  section.main__nohow .nohow__wrap {
+    padding: 35px 0;
+  }
+  section.main__nohow .nohow__wrap .tit-box {
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: -0.35px;
+  }
+  section.main__nohow .nohow__wrap .list-box {
+    padding: 35px 0 45px;
+  }
+  section.main__nohow .nohow__wrap .list-box ul li {
+    text-align: center;
+  }
+  section.main__nohow .nohow__wrap .list-box ul li .img-box img {
+    width: 50%;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  section.main__nohow .nohow__wrap .list-box ul li .info-box {
+    padding-top: 15px;
+  }
+  section.main__nohow .nohow__wrap .list-box ul li .info-box .top-box {
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: -0.35px;
+  }
+  section.main__nohow .nohow__wrap .list-box ul li .info-box .mid-box {
+    line-height: 20px;
+    font-size: 12px;
+    letter-spacing: -0.275px;
+  }
+  section.main__nohow .nohow__wrap .list-box ul li .info-box .bottom-box {
+    line-height: 20px;
+    font-size: 17px;
+    letter-spacing: -0.39px;
+  }
+  section.main__nohow .nohow__wrap .sub-box .sub-txt {
+    font-size: 12px;
+    line-height: 15px;
+    padding-bottom: 5px;
+    letter-spacing: -0.275px;
+  }
+  section.main__nohow .nohow__wrap .sub-box .sub-link-btn {
+    line-height: 15px;
+    letter-spacing: -0.35px;
+    font-size: 15px;
+  }
+  section.main__process {
+    padding: 50px 0;
+  }
+  section.main__process .inner {
+    padding-left: 24px;
+    padding-right: 0;
+  }
+  section.main__process .process-tit {
+    display: none;
+  }
+  section.main__process .process__box .process-tit-box {
+    font-size: 15px;
+    letter-spacing: -0.35px;
+    padding-bottom: 30px;
+    line-height: 15px;
+  }
+  section.main__process .process__box .process-con-box {
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+  section.main__process .process__box .process-con-box ul {
+    white-space: nowrap;
+  }
+  section.main__process .process__box .process-con-box ul li {
+    width: 50px;
+    vertical-align: top;
+  }
+  section.main__process .process__box .process-con-box ul li .tit-box {
+    font-size: 15px;
+    line-height: 15px;
+    letter-spacing: -0.05px;
+  }
+  section.main__process .process__box .process-con-box ul li .img-box {
+    margin: 20px 0 7px;
+  }
+  section.main__process .process__box .process-con-box ul li .img-box img {
+    width: 100%;
+  }
+  section.main__process .process__box .process-con-box ul li .txt-box {
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: -0.045px;
+    white-space: initial;
+    word-break: keep-all;
+    height: 30px;
+  }
+  section.main__process .process__box .process-con-box ul li + li {
+    margin-left: 57px;
+  }
+  section.main__process .process__box .process-con-box ul li + li:after {
+    left: -30px;
+    width: 5px;
+    height: 10px;
+  }
+  section.main__effect .effect__wrap .tit-box .main-txt {
+    font-size: 20px;
+    line-height: 37.5px;
+    letter-spacing: -0.46px;
+  }
+  section.main__effect .effect__wrap .tit-box .sub-txt {
+    font-size: 10px;
+    line-height: 15px;
+    letter-spacing: -0.32px;
+  }
+  section.main__effect .effect__wrap {
+    padding: 45px 0;
+  }
+  footer .footer__wrap .footer__top {
+    right: 20px;
+    top: -30px;
+    width: 42px;
+    height: 30px;
+  }
+  section.main__effect .effect__wrap .list-box {
+    padding: 35px 0 0;
+  }
+  section.main__effect .effect__wrap .list-box ul {
+    margin: -7.5px;
+  }
+  section.main__effect .effect__wrap .list-box ul li {
+    width: calc(50% - 15px);
+    margin: 7.5px;
+    padding: 17px 15px 0;
+    height: 130px;
+  }
+  section.main__effect .effect__wrap .list-box ul li .tit-box {
+    font-size: 13px;
+    line-height: 19px;
+    letter-spacing: -0.3px;
+  }
+  section.main__effect .effect__wrap .list-box ul li .txt-box {
+    font-size: 11px;
+    letter-spacing: -0.25px;
+    padding-top: 11.5px;
+    line-height: 16px;
+    word-break: keep-all;
+  }
+  section.main__effect .effect__wrap .list-box ul li:nth-child(1) {
+    background-size: 22px 22px;
+    background-position: top 15px right 15px;
+  }
+  section.main__effect .effect__wrap .list-box ul li:nth-child(2) {
+    background-size: 23px 22px;
+    background-position: top 15px right 15px;
+  }
+  section.main__effect .effect__wrap .list-box ul li:nth-child(3) {
+    background-size: 22px 22px;
+    background-position: top 15px right 15px;
+  }
+  section.main__effect .effect__wrap .list-box ul li:nth-child(4) {
+    background-size: 22px 22px;
+    background-position: top 15px right 15px;
+  }
+  section.main__nohow .nohow__wrap .sub-box .sub-link-btn:after {
+    width: 140px;
+    height: 7px;
+    bottom: -6px;
+  }
+  footer {
+    background-color: #0e1734;
+  }
+  footer .footer__wrap {
+    text-align: center;
+    padding: 25px 0 50px;
+    height: auto;
+  }
+  footer .footer__wrap .footer__cs {
+    position: static;
+    padding-bottom: 15px;
+  }
+  footer .footer__wrap .footer__con .footer__link {
+    padding: 20px 0 10px;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 0.04px;
+  }
+  footer .footer__wrap .footer__cs .con {
+    font-size: 20px;
+    letter-spacing: 0.7px;
+  }
+  footer .footer__wrap .footer__cs .subject {
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 0.04px;
+  }
+  article.sub__page__bg {
+    height: auto;
+  }
+  article.page__header {
+    padding-top: 50px;
+  }
+  article.page__header .main-txt {
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: -0.46px;
+  }
+  article.measure__tabs {
+    padding-top: 71px;
+  }
+  article.measure__tabs:after {
+    top: 35px;
+    width: 30px;
+  }
+  article.measure__tabs .tabs__wrap a {
+    font-size: 12px;
+    line-height: initial;
+    letter-spacing: -0.35px;
+    height: 55px;
+    border-width: 2.5px;
+  }
+  article.measure__tabs .tabs__wrap a + a:after {
+    height: 17.5px;
+  }
+  article.measure__tabs .tabs__wrap a.on {
+    border-width: 2.5px;
+  }
+  section.measure .measure__list .tabs-box .img-box {
+    width: 180px;
+    margin: 0 auto;
+    display: block;
+  }
+  section.measure .measure__list {
+    padding-top: 35px;
+  }
+  section.measure .measure__list .tabs-box .info-box {
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 0;
+  }
+  section.measure .measure__list .tabs-box .info-box .tit-box {
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: -0.46px;
+    padding-bottom: 10px;
+  }
+  section.measure .measure__list .tabs-box .info-box .txt-box {
+    font-size: 12px;
+    line-height: 17px;
+    letter-spacing: -0.275px;
+    word-break: keep-all;
+  }
+  section.measure .measure__list .tabs-box .info-box .txt-box br {
+    display: none;
+  }
+  section.measure .measure__list .tabs-box .menu-box {
+    padding-top: 35px;
+  }
+  section.measure .measure__list .tabs-box .menu-box a {
+    width: 180px;
+    height: 38px;
+    font-size: 15px;
+    letter-spacing: -0.35px;
+  }
+  .container .wrapper.type-subpage {
+    padding-bottom: 80px;
+  }
+  section.measure__result .measure__result__box .img-box {
+    width: 150px;
+    margin: 0 auto;
+  }
+  section.measure__result .measure__result__box .img-box img {
+    width: 100%;
+  }
+  section.measure__result .measure__result__box .info-box {
+    padding-top: 35px;
+    font-size: 13px;
+    line-height: 17px;
+  }
+  section.measure__result .measure__result__box .info-box .mobile-enter {
+    display: block;
+  }
+  section.measure__result .measure__result__box .info-box .txt-box {
+    font-size: 12px;
+    line-height: 17px;
+    letter-spacing: -0.275px;
+    text-align: left;
+    word-break: keep-all;
+  }
+  section.measure__result .measure__result__box .menu-box {
+    padding-top: 50px;
+    font-size: 0;
+  }
+  section.measure__result .measure__result__box .menu-box a {
+    font-size: 15px;
+    line-height: 15px;
+    letter-spacing: -0.35px;
+  }
+  section.measure__result .measure__result__box .menu-box a.chk-btn {
+    width: 95px;
+    height: 38px;
+  }
+  section.measure__result .measure__result__box .menu-box a.consultation-btn {
+    height: 38px;
+    width: 180px;
+    margin-left: 7px;
+  }
+  section.consulting .talk__group {
+    padding-top: 50px;
+  }
+  section.consulting .talk__group .talk-box {
+    width: 100%;
+  }
+  section.consulting .talk__group .talk-box + .talk-box {
+    margin-top: 50px;
+  }
+  section.consulting .talk__group .talk-box + .talk-box .tit-box:after {
+    top: 70px;
+  }
+  section.consulting .talk__group .talk-box .tit-box {
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: -0.46px;
+    padding-bottom: 71px;
+  }
+  section.consulting .talk__group .talk-box .tit-box:after {
+    top: 60px;
+    width: 30px;
+    height: 1px;
+  }
+  section.consulting .talk__group .talk-box .img-box {
+    margin: 0 auto;
+    width: 55px;
+  }
+  section.consulting .talk__group .talk-box .img-box img {
+    width: 100%;
+  }
+  section.consulting .talk__group .talk-box .menu-box .menu-btn {
+    width: 130px;
+    height: 38px;
+    font-size: 15px;
+    line-height: 15px;
+    letter-spacing: -0.35px;
+  }
+  section.consulting .talk__group .talk-box .tit-box .sub-txt {
+    top: 30px;
+    font-size: 12px;
+    line-height: 17px;
+  }
+  section.consulting .talk__group .talk-box .txt-box {
+    font-size: 12px;
+    line-height: 17px;
+    letter-spacing: -0.275px;
+  }
+  section.consulting .talk__group .talk-box .menu-box {
+    padding: 25px 0 15px;
+  }
+  article.page__header .main-txt.type-2 {
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: -0.46px;
+    padding-bottom: 71px;
+  }
+  article.page__header .main-txt.type-2 .float-txt {
+    top: 30px;
+    font-size: 12px;
+    line-height: 17px;
+  }
+  article.page__header .main-txt.type-2:after {
+    top: 70px;
+    width: 30px;
+    height: 1px;
+  }
+  section.consulting__chat .chat-tit-box .info-box {
+    padding: 0;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: -0.46px;
+  }
+  section.consulting__chat .chat-info-txt.type-tax {
+    padding: 14px 0 25px;
+    font-size: 12px;
+    line-height: 17px;
+    letter-spacing: -0.275px;
+  }
+  article.page__header .main-txt.type-1 {
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: -0.46px;
+    padding-bottom: 71px;
+  }
+  article.page__header .main-txt.type-1:after {
+    top: 60px;
+    width: 30px;
+    height: 1px;
+  }
+  section.consulting__chat .chat-tit-box .img-box {
+    display: block;
+    margin: 0 auto 15px;
+    width: 55px;
+  }
+  section.consulting__chat .chat-tit-box .img-box img {
+    width: 100%;
+  }
+  section.consulting__chat .chat-info-txt {
+    font-size: 12px;
+    line-height: 17px;
+    letter-spacing: -0.275px;
+    padding: 20px 0 25px;
+  }
+  section.consulting__chat .chat-wrap {
+    height: 342.5px;
+  }
+  article.board__tabs {
+    padding-top: 50px;
+  }
+  article.board__tabs .tabs__wrap a {
+    line-height: 50px;
+    border-width: 2.5px;
+    font-size: 15px;
+    letter-spacing: -0.35px;
+  }
+  article.board__tabs .tabs__wrap a + a:after {
+    height: 31px;
+  }
+  article.board__tabs .tabs__wrap a.on {
+    border-width: 2.5px;
+  }
+  article.page__header .sub-txt {
+    font-size: 12px;
+    line-height: 17px;
+    padding-top: 10px;
+    letter-spacing: -0.275px;
+  }
+  article.board__list {
+    padding-top: 35px;
+  }
+  article.board__list .table-box .row .link-txt {
+    padding: 15px 0;
+    display: block;
+    height: auto;
+  }
+  article.board__list .table-box .row .link-txt .subject-txt {
+    display: block;
+    width: 100%;
+    font-size: 13px;
+    letter-spacing: -0.3px;
+  }
+  article.board__list .table-box .row .link-txt .date-txt {
+    position: static;
+    -webkit-transform: none;
+            transform: none;
+    padding-top: 7px;
+    font-size: 12px;
+    letter-spacing: -0.275px;
+  }
+  article.paging {
+    padding-top: 30px;
+  }
+  article.paging ul li a.num {
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.6px;
+    margin: 0 10px;
+  }
+  article.board__search__form {
+    padding-top: 60px;
+  }
+  article.board__search__form .input-box {
+    width: 100%;
+  }
+  article.board__search__form .input-box input {
+    height: 45px;
+    padding: 0 60px 0 15px;
+  }
+  article.board__con {
+    padding-top: 35px;
+  }
+  article.board__con .tit-box {
+    padding: 15px 0;
+  }
+  article.board__con .tit-box .date {
+    position: static;
+    padding-top: 7px;
+    -webkit-transform: none;
+            transform: none;
+  }
+  article.board__con .con-box {
+    height: auto;
+    min-height: 159px;
+    padding: 15px 0;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: -0.275px;
+  }
+  article.board__con .menu-box a {
+    width: 95px;
+    height: 38px;
+    font-size: 15px;
+    letter-spacing: -0.35px;
+  }
+  article.board__list .table-box .row .link-txt.inquiry .subject-txt {
+    padding-left: 25px;
+  }
+  article.board__list .table-box .row .link-txt.inquiry .date-txt {
+    text-align: right;
+  }
+  article.board__list .table-box .row .link-txt .state-txt {
+    position: absolute;
+    left: 0;
+    bottom: 15px;
+    height: auto;
+    -webkit-transform: none;
+            transform: none;
+    top: auto;
+    right: auto;
+  }
+  article.input__form .row .item .con .input-box.with-btn .input-btn.type1 {
+    border-radius: 2px;
+    height: 34px;
+    width: 85px;
+    font-size: 12px;
+    letter-spacing: -0.275px;
+    font-weight: 700;
+  }
+  article.input__form {
+    width: 100%;
+    margin: 0;
+  }
+  article.input__form .row .item .con .input-box input {
+    padding: 0 15px;
+    font-size: 12px;
+  }
+  article.input__form .row .item .con .input-box .text-box textarea {
+    padding: 15px;
+    min-height: 250px;
+    height: auto;
+    font-size: 12px;
+  }
+  article.input__form .row .item .con .input-box .text-box textarea::-webkit-input-placeholder {
+    font-size: 12px;
+  }
+  article.input__form .row .item .con .input-box .text-box textarea:-ms-input-placeholder {
+    font-size: 12px;
+  }
+  article.input__form .row .item .con .input-box .text-box textarea::-ms-input-placeholder {
+    font-size: 12px;
+  }
+  article.input__form .row .item .con .input-box .text-box textarea::placeholder {
+    font-size: 12px;
+  }
+  article.input__form .row .item .con .input-box.with-btn input {
+    padding: 0 120px 0 15px;
+  }
+  article.input__form .menu-box {
+    text-align: center;
+  }
+  article.input__form .menu-box a {
+    font-size: 15px;
+    height: 38px;
+    letter-spacing: -0.35px;
+  }
+  article.input__form .menu-box a.type-cancel {
+    width: 95px;
+  }
+  article.input__form .menu-box a.type-submit {
+    width: 180px;
+    margin-left: 7px;
+  }
+  article.board__list .table-box .row .link-txt .refund-btn {
+    position: static;
+    -webkit-transform: none;
+            transform: none;
+    margin-top: 10px;
+    border-radius: 2px;
+  }
+  article.board__list .table-box .row .link-txt.type-pay {
+    min-height: 92px;
+  }
+  article.board__list .table-box .row .link-txt.type-pay .state-txt {
+    right: 0;
+    top: 15px;
+    line-height: 20px;
+    font-size: 13px;
+    bottom: auto;
+    left: auto;
+  }
+  section.login {
+    padding: 36px 20px 0;
+  }
+  section.login .login__wrap {
+    width: 100%;
+    padding: 25px 15px 95px;
+  }
+  section.login .login__wrap .login-tit {
+    font-size: 20px;
+    letter-spacing: -0.46px;
+  }
+  section.login .login__wrap .login-form {
+    padding-top: 25px;
+  }
+  section.login .login__wrap .login-form .row .input-box input {
+    height: 45px;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: -0.275px;
+    padding: 0 15px;
+  }
+  section.login .login__wrap .login-form .row .login-btn {
+    border-radius: 3px;
+    height: 35px;
+    font-size: 15px;
+    letter-spacing: -0.35px;
+  }
+  section.login .login__wrap .login-form .row .find-box .find-txt {
+    font-size: 13px;
+    letter-spacing: -0.3px;
+  }
+  section.login .login__wrap .login-form .row .find-box .find-txt + .find-txt {
+    margin-left: 30px;
+  }
+  section.login .login__wrap .login-form .row .find-box .find-txt + .find-txt:after {
+    left: -15px;
+    height: 18px;
+  }
+  section.login .login__wrap .join-box .join-btn {
+    height: 45px;
+    font-size: 15px;
+    letter-spacing: -0.35px;
+  }
+  article.find__tabs {
+    padding: 50px 20px 0;
+  }
+  article.find__tabs .tabs__wrap a {
+    height: 50px;
+    border-width: 2.5px;
+    line-height: 50px;
+    font-size: 15px;
+    letter-spacing: -0.35px;
+  }
+  article.find__tabs .tabs__wrap a.on {
+    border-width: 2.5px;
+  }
+  article.find__tabs .tabs__wrap a.on:before {
+    height: 2.5px;
+  }
+  article.find__tabs .tabs__wrap a + a:after {
+    height: 31px;
+  }
+  section.login .login__wrap .login-form .row .input-box.with-btn .input-btn {
+    right: 15px;
+  }
+  section.login .login__wrap .login-form .row .find-txt-box {
+    font-size: 12px;
+    letter-spacing: -0.275px;
+    line-height: 20px;
+  }
+  section.login .login__wrap .login-form .row .find-txt-box b {
+    letter-spacing: -0.46px;
+  }
+  section.first-section {
+    padding: 0;
+  }
+  article.input__form .row .item .con .input-box.with-btn .input-btn {
+    width: 85px;
+    border-radius: 2px;
+  }
+  article.consulting__tabs {
+    overflow-x: auto;
+    padding-top: 50px;
+  }
+  article.consulting__tabs ul {
+    white-space: nowrap;
+  }
+  article.consulting__tabs ul li {
+    width: 92px;
+  }
+  article.consulting__tabs ul li a {
+    height: 120px;
+  }
+  article.consulting__tabs ul li a.on .img-box {
+    background-size: cover !important;
+  }
+  article.consulting__tabs ul li a .img-box {
+    width: 45px;
+    height: 45px;
+    background-size: cover !important;
+  }
+  article.consulting__tabs ul li a .img-box img {
+    width: 100%;
+    height: 100%;
+  }
+  article.consulting__tabs ul li a .txt-box {
+    font-size: 12px;
+    line-height: 17px;
+    letter-spacing: -0.275px;
+    height: 45px;
+  }
+  article.consulting__tabs__box .tabs-box .list-wrap ul {
+    margin: 0;
+  }
+  article.consulting__tabs__box .tabs-box .list-wrap ul li {
+    width: 100%;
+    margin: 0;
+  }
+  article.consulting__tabs__box .tabs-box .list-wrap ul li + li {
+    margin-top: 15px;
+  }
+  article.consulting__tabs__box .tabs-box .list-wrap ul li .top-box {
+    padding: 20px;
+    height: auto;
+  }
+  article.consulting__tabs__box .tabs-box .list-wrap ul li .top-box .consulting-btn {
+    top: 23px;
+    right: 20px;
+    height: 38px;
+    width: 96px;
+    font-size: 12px;
+    letter-spacing: -0.275px;
+  }
+  article.consulting__tabs__box .tabs-box .list-wrap ul li .bottom-box {
+    height: auto;
+    padding: 20px;
+  }
+  article.consulting__tabs__box .tabs-box .list-wrap ul li .bottom-box .special-tit {
+    font-size: 15px;
+    line-height: 15px;
+    letter-spacing: -0.35px;
+  }
+  article.consulting__tabs__box .tabs-box .list-wrap ul li .bottom-box .special-txt {
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: -0.275px;
+  }
+  article.consulting__tabs__box .tabs-box .list-wrap ul li .top-box .corp-box {
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: -0.275px;
+    padding-bottom: 5px;
+  }
+  article.consulting__tabs__box .tabs-box .list-wrap ul li .top-box .name-box .main-txt {
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: -0.46px;
+  }
+  article.consulting__tabs__box .tabs-box .list-wrap ul li .top-box .name-box .nominal-txt {
+    font-size: 13px;
+    letter-spacing: -0.3px;
+    padding-top: 6px;
+    padding-left: 3px;
+  }
+  article.consulting__tabs__box .tabs-box .list-wrap ul li .top-box .history-box .row {
+    font-size: 12px;
+    letter-spacing: -0.275px;
+    background-size: 11px auto;
+  }
+  article.consulting__tabs__box .tabs-box .list-wrap ul li .top-box .history-box .row + .row {
+    margin-top: 5px;
+  }
+  article.error__page {
+    padding: 20px;
+    width: 100%;
+  }
+  article.error__page .img-box {
+    width: 200px;
+    margin: 0 auto;
+  }
+  article.error__page .img-box img {
+    width: 100%;
+  }
+  article.error__page .error-btn {
+    width: 100%;
+    height: 38px;
+    font-size: 14px;
+  }
+  article.error__page .txt-box {
+    font-size: 14px;
+    line-height: 18px;
+    white-space: initial;
+  }
+  section.consulting__info .info-img {
+    padding: 50px 0 35px;
+  }
+  section.consulting__info .info-img img {
+    width: 126.5px;
+  }
+  section.consulting__info .pay-box-list .pay-box .menu-box .menu-btn {
+    width: 100%;
+    height: 38px;
+    font-size: 15px;
+    letter-spacing: -0.35px;
+  }
+  section.consulting__info .pay-box-list .pay-box {
+    width: 100%;
+  }
+  section.consulting__info .pay-box-list .pay-box + .pay-box {
+    margin-left: 0;
+    margin-top: 50px;
+  }
+  section.consulting__info .pay-box-list .pay-box .tit-box {
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: -0.46px;
+  }
+  section.consulting__info .pay-box-list .pay-box .con-box {
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: -0.3px;
+    padding: 10px 0 35px;
+  }
+  section.consulting__info .pay-after-input .after-box .bottom-box .input-box {
+    width: 100%;
+  }
+  section.consulting__info .pay-after-input .after-box .bottom-box .input-box input {
+    width: 100%;
+    height: 45px;
+  }
+  section.consulting__info .pay-after-input {
+    padding-top: 50px;
+  }
+  section.consulting__info .pay-after-input .after-box .top-box {
+    font-size: 13px;
+    letter-spacing: -0.3px;
+    line-height: 19px;
+    padding-bottom: 5px;
+  }
+  section.consulting__matching article.input__form {
+    margin-top: 0;
+    margin-bottom: 25px;
+  }
+  article.input__form .row + .row {
+    margin-top: 20px;
+  }
+  article.input__form .row .item .subject {
+    padding-bottom: 7px;
+    font-size: 13px;
+    letter-spacing: -0.3px;
+  }
+  article.input__form .row .item .con .cbox {
+    margin: 0 0 10px !important;
+  }
+  .cbox label .txt {
+    font-size: 13px;
+    letter-spacing: -0.3px;
+    padding-left: 4px;
+  }
+  article.input__form .cbox-list {
+    margin-top: 15px;
+  }
+  .sbox select {
+    padding: 0 40px 0 15px;
+    background-position: right 15px center;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */

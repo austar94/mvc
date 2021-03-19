@@ -1,0 +1,2412 @@
+/* :: ksg_1 = ksg_20210125_1152 */
+/* :: open : ksg_1 : [세무야] 재무제표 업로드 페이지 내용. */
+/* :: innerO : 신규 내용 추가. */
+section.fileUpSort .keyword-result-box .inBoxTitle {
+    font-size : 20px;
+    font-weight : 600;
+    color : #eb6108;
+    padding-bottom : 10px;
+}
+section.fileUpSort .keyword-result-box .inBoxTxt {
+    font-size : 16px;
+}
+section.fileUpSort .keyword-result-box .inboXBtn {
+    margin-top : 20px;
+    font-size : 16px;
+    font-weight : 600;
+}
+section.fileUpSort .underlined {
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+
+section.fileUpSort .keyword-result-box.emptySort .inBoxTxt {
+    text-align : center;
+}
+section.fileUpSort.consulting__chat .keyword-result-box.emptySort {
+    padding : 30px 30px 40px 30px;
+}
+.relativeMod {
+    position : relative;
+}
+section.fileUpSort .sub__page__bg .img-box .inBoxTitle.webSort {
+    position : absolute;
+    display : block;
+    width : 100%;
+    top : 50%;
+    text-align : center;
+}
+section.fileUpSort .inBoxTitle.webSort .mainTxt {
+    font-size : 50px;
+    line-height : 75px;
+    color : #fff;
+    font-weight : 800;
+}
+section.fileUpSort .measure.mainTblSort {
+    padding-top : 60px;
+}  
+section.fileUpSort .tblChkConCase {
+    padding-top : 10px;
+    padding-bottom : 30px;
+    position : relative;
+}
+section.fileUpSort .chkBoxGroup.roundSort .cbox {
+    margin-left : 50px;
+}
+section.fileUpSort .chkBoxGroup.roundSort .cbox:first-child {
+    margin-left : 0;
+}
+/* :: inO : ksg_20210218_1235 : 추가 내용. */
+.chkBoxGroup.roundSort.topGapSort1 {
+    margin-top : 10px;
+}
+/* :: inC : ksg_20210218_1235 : 추가 내용. */
+
+.chkBoxGroup.roundSort .cbox label input[type=checkbox] ~ i {
+    background: url(/img/ic_radio_round.svg) no-repeat center/cover;
+}
+.chkBoxGroup.roundSort .cbox label input[type=checkbox]:checked ~ i {
+    background: url(/img/ic_radio_round_on.svg) no-repeat center/cover;
+}
+.chkBoxGroup.roundSort .cbox label input[type=checkbox] ~ i {
+    background: url(/img/ic_radio_round.svg) no-repeat center/cover;
+}
+.chkBoxGroup.roundSort .cbox label input[type=checkbox]:checked ~ i {
+    background: url(/img/ic_radio_round_on.svg) no-repeat center/cover;
+}
+section.fileUpSort .tipBox.underCboxSort {
+    padding-top : 20px;
+    font-size : 14px;
+}
+section.fileUpSort .chkBoxGroup.roundSort .cbox label .txt {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+section.fileUpSort .radioBoxGroup.roundSort .cbox {
+    margin-left : 50px;
+}
+section.fileUpSort .radioBoxGroup.roundSort .cbox:first-child {
+    margin-left : 0;
+}
+
+.radioBoxGroup.roundSort .cbox label input[type=radio] ~ i {
+    background: url(/img/ic_radio_round.svg) no-repeat center/cover;
+}
+.radioBoxGroup.roundSort .cbox label input[type=radio]:checked ~ i {
+    background: url(/img/ic_radio_round_on.svg) no-repeat center/cover;
+}
+.radioBoxGroup.roundSort .cbox label input[type=radio] ~ i {
+    background: url(/img/ic_radio_round.svg) no-repeat center/cover;
+}
+.radioBoxGroup.roundSort .cbox label input[type=radio]:checked ~ i {
+    background: url(/img/ic_radio_round_on.svg) no-repeat center/cover;
+}
+section.fileUpSort .radioBoxGroup.roundSort .cbox label .txt {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+}
+.radioBoxGroup.roundSort .cbox label input[type=radio] {
+    display : none;
+}
+
+
+section.fileUpSort .tblChkConCase .btnGroup.tbldisplSort {
+    position : absolute;
+    bottom : 10px;
+    right : 0;
+    font-size : 0;
+}
+section.fileUpSort .tblChkConCase .btnGroup.tbldisplSort.hide {
+    display : none;
+}
+section.fileUpSort .btn.hide {
+    display : none;
+}
+section.fileUpSort .tblChkConCase .btnGroup.tbldisplSort .btn.hideSort {
+    padding: 12px 0;
+    width : 130px;
+    border-radius: 6px;
+    background-color: #b9bbbe;
+    color : #fff;
+    text-align : center;
+    font-size : 16px;
+}
+section.fileUpSort .tblChkConCase .btnGroup.tbldisplSort .btn.showSort {
+    padding: 12px 0;
+    width : 130px;
+    border-radius: 6px;
+    background-color: #eb6108;
+    color : #fff;
+    text-align : center;
+    font-size : 16px;
+}
+section.fileUpSort .tblMainCase {
+    font-size : 0;
+    margin-bottom : 60px;
+    position : relative;
+}
+section.fileUpSort .tblMainCase.hide {
+    display : none;
+}
+section.fileUpSort .tblMainCase .btnGroup.uploadSort {
+    display : block;
+    width : 100%;
+    padding : 10px;
+    border : 1px solid #ddd;
+}
+section.fileUpSort .tblMainCase .btnGroup.uploadSort.hide {
+    display : none;
+}
+section.fileUpSort .tblMainCase .btnGroup.uploadSort .btn {
+    font-size : 13px;
+}
+section.fileUpSort .btnGroup.uploadSort .btn.fileUpSort {
+    width: 130px;
+    height : 30px;
+    text-align : center;
+    border-radius: 6px;
+    color : #454545;
+    vertical-align : middle;
+    line-height : 30px;
+    margin-left : 10px;
+}
+section.fileUpSort .btnGroup.uploadSort .btn.fileUpSort:first-child {
+    margin-left : 0;
+}
+section.fileUpSort .btnGroup.uploadSort .btn.fileUpSort.type1 {
+    background-color : #008f41;
+    color : #fff;
+}
+section.fileUpSort .btnGroup.uploadSort .btn.fileUpSort.type2 {
+    background-color: #d12e1e;
+    color : #fff;
+}
+section.fileUpSort .btnGroup.uploadSort .btn.fileUpSort.type3 {
+    border : 1px solid #5f646b;
+    color : #5f646b;
+    line-height : 28px;
+    width : auto;
+    padding : 0 17px;
+    font-weight : 500;
+}
+section.fileUpSort .btnGroup.uploadSort .btn.fileUpSort.type4 {
+    color : #fff;
+    background-color : #eb6108;
+    width : auto;
+    padding : 0 17px;
+}
+section.fileUpSort .measure.mainTblSort .measureTbl {
+    width : 100%;
+    border : 1px solid #ddd;
+    text-align : center;
+}
+section.fileUpSort .measureTbl thead tr {
+    background-color : #fbecd7;
+}
+section.fileUpSort .measureTbl td {
+    padding : 16px 0;
+    font-size : 14px;
+}
+section.fileUpSort .measureTbl th {
+    padding : 16px 0;
+    font-weight : 500;
+    font-size : 16px;
+    border-left : 1px solid #ddd;
+}
+section.fileUpSort .measureTbl th:first-child {
+    border-left : none;
+}
+section.fileUpSort .measureTbl th.rSideLGreySort {
+    border-left : 1px solid #ddd;
+}
+section.fileUpSort .measureTbl tr {
+    border-top : 1px solid #ddd;
+}
+section.fileUpSort .measureTbl thead tr:first-child {
+    border-top : none;
+}
+section.fileUpSort .measureTbl tbody tr:first-child {
+    border-top : 1px solid #ddd;
+}
+section.fileUpSort .rSideBdr {
+    border-right : 1px solid #ddd;
+}
+section.fileUpSort .measureTbl tbody td {
+    border-left : 1px solid #ddd;
+    text-align : right;
+}
+section.fileUpSort .measureTbl tbody td:first-child {
+    border-left : none;
+    text-align : center;
+}
+section.fileUpSort .btnGroup.pgBotSort {
+    display : block;
+    padding : 60px 0 50px 0;
+    text-align : center;
+}
+section.fileUpSort .btnGroup.pgBotSort .btn.type1 {
+    display : inline-block;
+    width: 400px;
+    height: 54px;
+    line-height : 54px;
+    font-size : 24px;
+    color : #fff;
+    background-color : #eb6108;
+}
+section.fileUpSort .tipBox.pgLBSort {
+    font-size : 14px;
+    line-height : 24px;
+    color : #7c7c7c;
+    padding-bottom : 35px;
+}
+
+section.fileUpSort .tblScrCase {
+    width : 100%;
+    overflow-X : scroll;
+    border : 1px solid #ccc;
+}
+section.fileUpSort .tblScrCase.hide {
+    display : none;
+}
+section.fileUpSort .vertGroup {
+    float : left;
+}
+section.fileUpSort .vertGroup.fstChd {
+    width : 300px;
+}
+section.fileUpSort .vertGroup.afterSort {
+    width : 300px;
+}
+section.fileUpSort .vertGroup .headerLayer {
+    background-color : #fbecd7;
+}
+section.fileUpSort .vertGroup .headerLayer .titleBox {
+    line-height : 80px;
+    height : 80px;
+    font-size : 16px;
+    padding : 0 10px;
+    text-align : center;
+}
+section.fileUpSort .vertGroup .titleBox {
+    border : 1px solid #ccc;
+}
+section.fileUpSort .vertGroup .infoLayer .titleBox {
+    line-height : 30px;
+    height : 30px;
+    font-size : 16px;
+    padding : 0 10px;
+    text-align : left;
+}
+section.fileUpSort .vertGroup .infoLayer .titleBox.sndSort {
+    padding : 0 10px 0 30px;
+}
+section.fileUpSort .vertGroup .infoLayer .titleBox.thrdSort {
+    padding : 0 10px 0 50px;
+}
+section.fileUpSort .tblScrCase .vwCover {
+    width : 100%;
+}
+
+section.fileUpSort .vertGroup .headerLayer .lowerDeck .titleBox {
+    display : inline-block;
+    line-height : 40px;
+    height : 40px;
+}
+section.fileUpSort .vertGroup .headerLayer .titleBox.halfLoSort {
+    width : 60%;
+}
+section.fileUpSort .vertGroup .headerLayer .titleBox.halfShSort {
+    width : 40%;
+}
+
+section.fileUpSort .vertGroup .infoLayer .titleBox.halfLoSort {
+    display : inline-block;
+    width : 60%;
+}
+section.fileUpSort .vertGroup .infoLayer .titleBox.halfShSort {
+    display : inline-block;
+    width : 40%;
+}
+section.fileUpSort .vertGroup.afterSort .infoLayer .titleBox {
+    text-align : right;
+}
+section.fileUpSort .infoLayer input.bdLined:focus {
+    outline : 1px solid #ccc;
+}
+section.fileUpSort .infoLayer input.bdLined {
+    text-align : center;
+    outline : 1px solid #eee;
+}
+section.fileUpSort .infoLayer input.bdLined {
+    text-align : right;
+    background-color : transparent;
+    width : 100%;
+    padding : 0 10px;
+    height : calc(100% - 10px);
+}
+section.fileUpSort .vertGroup .headerLayer .upperDeck .titleBox {
+    line-height : 30px;
+    height : 40px;
+}
+section.fileUpSort .vertGroup .headerLayer .sbox {
+    line-height : 40px;
+    height : 40px;
+}
+section.fileUpSort .tblScrCase.noneScrSort {
+    overflow-X : unset;
+}
+
+section.fileUpSort .vertGroup .headerLayer .sbox.full {
+    border : none;
+}
+section.fileUpSort .tblMainCase.docuType2 .vertGroup.fstChd {
+    width : 800px;
+}
+section.fileUpSort .tblMainCase.docuType2 .vertGroup.afterSort {
+    width : 800px;
+}
+section.fileUpSort .vertGroup .headerLayer .titleBox.hexaLoSort {
+    width: 25%;
+}
+section.fileUpSort .vertGroup .headerLayer .titleBox.hexaShSort {
+    width: 10%;
+}
+section.fileUpSort .vertGroup .headerLayer .titleBox.hexaNoSort {
+    width: 15%;
+}
+section.fileUpSort .vertGroup .infoLayer .titleBox.hexaLoSort {
+    display : inline-block;
+    width : 25%;
+}
+section.fileUpSort .vertGroup .infoLayer .titleBox.hexaShSort {
+    display : inline-block;
+    width : 10%;
+}
+section.fileUpSort .vertGroup .infoLayer .titleBox.hexaNoSort {
+    display : inline-block;
+    width : 15%;
+}
+
+section.fileUpSort .tblMainCase.docuType3 .vertGroup.fstChd {
+    width : 1000px;
+}
+section.fileUpSort .tblMainCase.docuType3 .vertGroup.afterSort {
+    width : 1000px;
+}
+section.fileUpSort .tblMainCase.docuType3 .vertGroup .headerLayer .titleBox.hexaLoSort {
+    width: 24%;
+}
+section.fileUpSort .tblMainCase.docuType3 .vertGroup .headerLayer .titleBox.hexaShSort {
+    width: 8%;
+}
+section.fileUpSort .tblMainCase.docuType3 .vertGroup .headerLayer .titleBox.hexaNoSort {
+    width: 17%;
+}
+section.fileUpSort .tblMainCase.docuType3 .vertGroup .infoLayer .titleBox.hexaLoSort {
+    display : inline-block;
+    width : 24%;
+}
+section.fileUpSort .tblMainCase.docuType3 .vertGroup .infoLayer .titleBox.hexaShSort {
+    display : inline-block;
+    width : 8%;
+}
+section.fileUpSort .tblMainCase.docuType3 .vertGroup .infoLayer .titleBox.hexaNoSort {
+    display : inline-block;
+    width : 17%;
+}
+
+
+section.fileUpSort .tblMainCase.docuType4 .vertGroup.fstChd {
+    width : 300px;
+}
+section.fileUpSort .tblMainCase.docuType4 .vertGroup.afterSort {
+    width : 300px;
+}
+section.fileUpSort .tblMainCase.docuType4 .vertGroup .headerLayer .titleBox.triLoSort {
+    width:50%;
+}
+section.fileUpSort .tblMainCase.docuType4 .vertGroup .headerLayer .titleBox.triShSort {
+    width: 15%;
+}
+section.fileUpSort .tblMainCase.docuType4 .vertGroup .headerLayer .titleBox.triNoSort {
+    width: 35%;
+}
+section.fileUpSort .tblMainCase.docuType4 .vertGroup .infoLayer .titleBox.triLoSort {
+    display : inline-block;
+    width : 50%;
+}
+section.fileUpSort .tblMainCase.docuType4 .vertGroup .infoLayer .titleBox.triShSort {
+    display : inline-block;
+    width : 15%;
+}
+section.fileUpSort .tblMainCase.docuType4 .vertGroup .infoLayer .titleBox.triNoSort {
+    display : inline-block;
+    width : 35%;
+}
+.regPop.setYearSort {
+    display : none;
+    position : fixed;
+    top : 50%;
+    left : 50%;
+    transform : translate(-50%, -50%);
+    width : calc(100% - 40px);
+    max-width : 1200px;
+    padding : 70px 0 115px 0;
+    background-color : #fff;
+    z-index : 500;
+}
+.regPop.setYearSort .popHead {
+    display : block;
+    width : 100%;
+}
+.regPop.setYearSort .popHead .popTitle {
+    font-size : 40px;
+    font-weight : 800;
+    line-height : 75px;
+    text-align : center;
+}
+.regPop.setYearSort .popMainCon {
+    padding : 70px 0 50px 0;
+}
+.regPop.setYearSort .popMainCon .yearSetGroup {
+    display : block;
+    width : 400px;
+    margin : 0 auto;
+}
+.regPop.setYearSort .yearSetGroup .yearBox {
+    font-size : 0;
+}
+.regPop.setYearSort .yearSetGroup .regedYearCase .yearBox {
+    margin-bottom : 10px;
+}
+.regPop.setYearSort .yearSetGroup .yearBox .sbox option.selected {
+    background-color : #ccc;
+}
+.regPop.setYearSort .yearSetGroup .tbox.yearNameSort {
+    width : calc(100% - 60px);
+    height : 44px;
+    padding : 0 20px;
+}
+
+.regPop.setYearSort .yearSetGroup .btn.delSort {
+    background-color: #fff;
+    color: #eb6108;
+    height:  40px;
+    padding: 0 10px;
+    line-height:  40px;
+    border : 1px solid #eb6108;
+    font-size : 14px;
+    margin-left : 10px;
+}
+.regPop.setYearSort .yearSetGroup .btn.addSort {
+    background-color: #eb6108;
+    color: #fff;
+    height:  40px;
+    padding: 0 10px;
+    line-height:  40px;
+    font-size : 14px;
+    margin-left : 10px;
+}
+
+.regPop.setYearSort .popFooter {
+    text-align : center;
+    font-size : 0;
+}
+.regPop.setYearSort .popFooter .btn.cancelPop {
+    width : 140px;
+    height : 52px;
+    line-height : 50px;
+    border : 1px solid #454545;
+    color : #454545;
+    font-size : 20px;
+    border-radius: 2px;
+    margin-right : 10px;
+}
+.regPop.setYearSort .popFooter .btn.regPopBtn {
+    width : 248px;
+    height : 54px;
+    line-height : 54px;
+    background-color : #eb6108;
+    color : #fff;
+    font-size : 20px;
+    border-radius: 2px;
+}
+.regPop.setYearSort .yearSetGroup .sbox.full {
+    width: calc(100% - 60px);
+    height: 44px;
+    border: solid 1px #dddddd;
+}
+section.fileUpSort .tblMainCase .yearTab {
+    text-align : left;
+    width : calc(100% - 20px);
+    padding : 0 10px;
+    font-size : 0;
+}
+section.fileUpSort .tblMainCase .yearTab .yearTBtn {
+    display : inline-block;
+    font-size: 12px;
+    padding : 15px;
+    border : 1px solid #ccc;
+    color : #ccc;
+    border-radius : 3px;
+    margin-right : 5px;
+}
+section.fileUpSort .tblMainCase .yearTab .yearTBtn:hover {
+    border : 1px solid #eb6108;
+    color : #eb6108;
+    opacity : 0.7;
+}
+section.fileUpSort .tblMainCase .yearTab .yearTBtn.activated {
+    border : 1px solid #eb6108;
+    color : #eb6108;
+}
+section.fileUpSort .tblChkConCase .btnGroup.tbldisplSort .btn.fileUpSort.type1 {
+    padding: 12px 0;
+    width: 130px;
+    border-radius: 6px;
+    background-color: #008f41;
+    color: #fff;
+    text-align: center;
+    margin-right : 10px;
+    font-size : 16px;
+
+}
+section.fileUpSort .tblChkConCase .btnGroup.tbldisplSort .btn.fileUpSort.type3 {
+    padding: 12px 0;
+    width: 130px;
+    border-radius: 6px;
+    border: 1px solid #5f646b;
+    color: #5f646b;
+    text-align: center;
+    margin-right : 10px;
+    font-size : 16px;
+}
+section.fileUpSort .tblMainCase table {
+    border: 1px solid #ccc;
+}
+section.fileUpSort .tblMainCase table.hide {
+    display : none;
+}
+section.fileUpSort .tblMainCase table th {
+    line-height: 40px;
+    height: 40px;
+    font-size: 16px;
+    font-weight : 400;
+    border : 1px solid #ccc;
+    background-color: #fbecd7;
+}
+section.fileUpSort .tblMainCase table td {
+    line-height: 30px;
+    height: 30px;
+    font-size: 16px;
+    border : 1px solid #ccc;
+    text-align : center;
+}
+section.fileUpSort .tblMainCase table .rowTitleTd .titleBox {
+    line-height: 30px;
+    height: 30px;
+    font-size: 16px;
+    padding: 0 10px;
+    text-align: left;
+}
+section.fileUpSort .tblMainCase table .rowTitleTd .titleBox.sndSort {
+    padding: 0 10px 0 30px;
+}
+section.fileUpSort .tblMainCase table .rowTitleTd .titleBox.thrdSort {
+    padding: 0 10px 0 50px;
+}
+section.fileUpSort .tblMainCase table td input.bdLined {
+    text-align: right;
+    background-color: transparent;
+    width: calc(100% - 20px);
+    padding: 0 10px;
+    height: calc(100% - 10px);
+    outline: 1px solid #eee;
+}
+section.fileUpSort .tblMainCase .btnGroup.tableTopSort {
+    display : block;
+    padding : 10px 0;
+    text-align : right;
+}
+
+section.fileUpSort .tblMainCase .btnGroup.tableTopSort.hide {
+    display : none;
+}
+section.fileUpSort .tblMainCase .btnGroup.tableTopSort .btn.fileUpSort.excelSort {
+    padding: 12px 0;
+    width: 130px;
+    border-radius: 6px;
+    background-color: #008f41;
+    color: #fff;
+    text-align: center;
+    font-size : 12px;
+}
+.smallTip {
+    font-size : 14px;
+    padding : 8px 0 0 0;
+    font-weight : 400;
+}
+.smallTip.redSort {
+    font-size : 14px;
+    color : #d12e1e;
+}
+
+.regPop.warnSort {
+    display : none;
+    position : fixed;
+    top : 50%;
+    left : 50%;
+    transform : translate(-50%, -50%);
+    width : auto;
+    padding : 20px 0 20px 0;
+    background-color : #fff;
+    z-index : 500;
+    border-radius : 8px;
+    max-width : 600px;
+}
+.regPop.warnSort .popHead {
+    display : block;
+    width : 100%;
+}
+.regPop.warnSort .popHead .popTitle {
+    font-size : 20px;
+    font-weight : 800;
+    line-height : 30px;
+    text-align : center;
+}
+.regPop.warnSort .popMainCon {
+    padding : 20px 0 40px 0;
+}
+.regPop.warnSort .alertTxtGroup {
+    padding : 0 20px;
+    text-align : center;
+    font-size : 18px;
+    line-height : 20px;
+}
+.regPop.warnSort .popFooter {
+    text-align : center;
+    font-size : 0;
+}
+.regPop.warnSort .popFooter .btn.cancelPop {
+    width : 70px;
+    height : 40px;
+    line-height : 40px;
+    border : 1px solid #454545;
+    color : #454545;
+    font-size : 15px;
+    border-radius: 2px;
+    margin-right : 10px;
+}
+.regPop.warnSort .popFooter .btn.regPopBtn {
+    width: 140px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #eb6108;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 2px;
+}
+/* :: innerC : 신규 내용 추가. */
+/* :: close : ksg_1 : [세무야] 재무제표 업로드 페이지 내용. */
+
+/* :: open : ksg_20210128_1856 : [세무야] 세무진단표 측정 페이지 내용. */
+/* :: innerO : 신규 내용 추가. */
+section.measure.GroupSet .measureCase {
+    border : 1px solid #ddd;
+    padding : 25px 0;
+    margin-top : 20px;
+}
+section.measure.GroupSet .measureCase.hide {
+    display : none;
+}
+section.measure.GroupSet .measureCase.borderLess {
+    border : none;
+    width : 400px;
+    margin : 0 auto;
+    padding-bottom : 15px;
+}
+section.measure.GroupSet .measureCase:first-child {
+    margin-top : 70px;
+}
+section.measure.GroupSet  .input__form {
+    max-width: 1200px;
+}
+section.measure.GroupSet .measureCase .titleGroup {
+    position : relative;
+    width: calc(100% - 40px);
+    margin: 0 auto;
+}
+section.measure.GroupSet .measureCase .titleGroup .titleBox {
+    font-size : 20px;
+    font-weight : 800;
+    line-height : 1.4;
+}
+section.measure.GroupSet .measureCase .titleGroup .toggleBtnGroup {
+    position : absolute;
+    right : 0;
+    top : -10px;
+}
+section.measure.GroupSet .measureCase .toggleBtnGroup .btn.infoTogSort {
+    color: #fff;
+    font-size: 16px;
+    text-align : center;
+    width: 130px;
+    height: 40px;
+    line-height : 40px;
+    border-radius: 6px;
+    background-color: #b9bbbe;
+}
+section.measure.GroupSet .measureCase .togInfoBox {
+    padding-top : 35px;
+    padding-bottom : 25px;
+    width : 400px;
+    margin : 0 auto;
+}
+section.measure.GroupSet .measureCase .togInfoBox.hide {
+    display : none;
+}
+section.measure.GroupSet input:focus {
+    outline : 1px solid #eb6108;
+}
+section.measure.GroupSet .measureGroup {
+    margin-bottom : 30px;
+}
+section.measure.GroupSet .measureAddGroup {
+    margin : 30px auto 0 auto;
+    max-width : 400px;
+}
+section.measure.GroupSet .measureAddGroup .titleBox {
+    font-size : 20px;
+    font-weight : 800;
+    padding-bottom : 10px;
+}
+section.measure.GroupSet .measureAddGroup .yearSetGroup .sbox.full {
+    width : calc(100% - 80px);
+}
+section.measure.GroupSet .measureAddGroup .yearSetGroup .btn {
+    border: 1px solid #eb6108;
+    color: #eb6108;
+    height: 40px;
+    padding: 0 17px;
+    line-height: 40px;
+    font-size: 14px;
+    margin-left: 10px;
+}
+section.measure.GroupSet .btnGroup.pgBotSort {
+    display: block;
+    padding: 60px 0 50px 0;
+    text-align: center;
+}
+section.measure.GroupSet .btnGroup.pgBotSort .btn.type1 {
+    display: inline-block;
+    width: 400px;
+    height: 54px;
+    line-height: 54px;
+    font-size: 24px;
+    color: #fff;
+    background-color: #eb6108;
+}
+section.fileUpSort .tabBtnSet.typeSort {
+    float : left;
+    vertical-align : middle;
+}
+section.fileUpSort .tabBtnSet.typeSort .btn {
+    display: inline-block;
+    font-size: 12px;
+    padding: 11px 15px;
+    border: 1px solid #ccc;
+    color: #ccc;
+    border-radius: 3px;
+    margin-right: 5px;
+}
+section.fileUpSort .tabBtnSet.typeSort .btn.activated {
+    border: 1px solid #eb6108;
+    color: #eb6108;
+}
+.togInfoBox .sbox {
+    border: 1px solid #ccc;
+
+}
+
+section.hide {
+    display : none;
+}
+
+.ui-widget.ui-widget-content {
+    max-height : 450px;
+    overflow-y : auto;
+}
+/* :: innerC : 신규 내용 추가. */
+/* :: close : ksg_20210128_1856 : [세무야] 세무진단표 측정 페이지 내용. */
+
+
+/* :: open : ksg_20210129_0026 : [세무야] 세무진단 결과 페이지 내용. */
+/* :: innerO : 신규 내용 추가. */
+section.resultSpec .resultRepoGroup {
+    margin : 0 auto;
+    width : 1200px;
+}
+section.resultSpec .resultRepoGroup .page__header {
+    padding-top : 0;
+}
+section.resultSpec .inBoxTitle.webSort .mainTxt {
+    font-size : 50px;
+    line-height : 75px;
+    color : #fff;
+    font-weight : 800;
+}
+section.resultSpec .relativeMod {
+    position : relative;
+}
+section.resultSpec .sub__page__bg .img-box .inBoxTitle.webSort {
+    position : absolute;
+    display : block;
+    width : 100%;
+    top : 50%;
+    text-align : center;
+}
+section.resultSpec .btnGroup.pgBotSort {
+    display : block;
+    padding : 60px 0 50px 0;
+    text-align : center;
+}
+section.resultSpec .btnGroup.pgBotSort .btn.type1 {
+    display : inline-block;
+    width: 400px;
+    height: 54px;
+    line-height : 54px;
+    font-size : 24px;
+    color : #fff;
+    background-color : #eb6108;
+}
+section.resultSpec .resultRepoGroup .resultRepoCase {
+    text-align : center;
+    margin : 90px auto 0 auto;
+}
+section.resultSpec .resultRepoGroup .resultRepoCase:first-child {
+    margin-top : 92px;
+}
+/* section.resultSpec .resultRepoGroup .resultRepoCase .repoCaseInfo {
+    padding-top : 30px;
+} */
+section.resultSpec .graphGroup.doubSort .graphCase img {
+    width : 100%;
+    height : 100%;
+}
+section.resultSpec .graphGroup.doubSort .graphCase {
+    display : inline-block;
+    vertical-align : middle;
+    width : calc(50% - 122px);
+}
+section.resultSpec .graphGroup .graphFlow {
+    display : inline-block;
+    vertical-align : middle;
+    width : 34px;
+    height : 20px;
+    margin : 0 44px;
+}
+section.resultSpec .repoCaseInfo .tArea {
+    display : block;
+    resize : none;
+    width : 100%;
+    height : 120px;
+    padding : 30px;
+    margin-top : 30px;
+    border : 1px solid #dddddd;
+}
+section.resultSpec .repoCaseInfo .tArea::placeholder {
+    color : #ccc;
+}
+section.resultSpec .repoCaseInfo table {
+    border: 1px solid #ccc;
+    margin-top : 30px;
+}
+section.resultSpec .repoCaseInfo table th {
+    line-height: 40px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 400;
+    border: 1px solid #ccc;
+    background-color: #fbecd7;
+    padding : 0 10px;
+}
+section.resultSpec .repoCaseInfo table td {
+    line-height: 40px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 400;
+    border: 1px solid #ccc;
+    padding : 0 10px;
+}
+section.resultSpec .repoCaseInfo table td.leftSided {
+    text-align : left;
+}
+section.resultSpec .repoCaseInfo table.leftTitleSort {
+    text-align : left;
+}
+section.resultSpec .repoCaseInfo .descriptionGroup {
+    margin-top: 10px;
+    text-align : left;
+}
+section.resultSpec .repoCaseInfo .descriptionGroup.vangSort {
+    margin-top: 50px;
+}
+section.resultSpec .repoCaseInfo .descriptionGroup .txtBox {
+    line-height : 20px;
+    font-size : 16px;
+}
+section.resultSpec .underLined {
+    text-decoration: underline;
+    text-underline-position: under;
+}
+section.resultSpec .tbox.rightSided {
+    text-align : right;
+}
+section.resultSpec .f_blue {
+    color : rgb(84, 120, 199);
+}
+section.resultSpec .f_lBold {
+    font-weight : 500;
+}
+/* :: innerC : 신규 내용 추가. */
+/* :: close : ksg_20210129_0026 : [세무야] 세무진단 결과 페이지 내용. */
+
+
+/* :: open : ksg_20210129_1427 : [세무야] 세무상담 톡 페이지 내용. */
+/* :: innerO : 신규 내용 파트. */
+section.consulting__chat .keyword-result-box .inBoxTitle {
+    font-size: 20px;
+    font-weight: 600;
+    color: #eb6108;
+    padding-bottom: 10px;
+}
+section.consulting__chat .keyword-result-box .inBoxTxt {
+    font-size: 16px;
+}
+section.consulting__chat .keyword-result-box .inboXBtn {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 600;
+}
+section.consulting__chat .underlined {
+    text-decoration: underline;
+    text-underline-position: under;
+}
+.chat-tit-box.boardSort {
+    text-align : center;
+}
+.chat-tit-box.boardSort .info-box {
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 30px;
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: -0.92px;
+    font-weight: 700;
+    text-align : center;
+}
+.chat-info-txt.type-tax.boardSort {
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: -0.46px;
+    text-align : center;
+    padding: 29px 0 50px;
+}
+/* :: innerC : 신규 내용 파트. */
+/* :: close : ksg_20210129_1427 : [세무야] 세무상담 톡 페이지 내용. */
+
+/* :: open : ksg_20210129_1537 : [세무야] 소개 페이지 내용. */
+/* :: innerO : 신규 내용 파트. */
+header .header__wrap h1.logo a {
+    width: 138px;
+    height: 44px;
+    background: url(/img/img_logo_new.png) no-repeat center/cover;
+}
+.menu-btn:hover {
+    opacity : 0.75;
+}
+footer {
+    background-color: #0E1734;
+}
+.footerLogo {
+    width : 184px;
+    height : 40px;
+}
+/* :: innerC : 신규 내용 파트. */
+/* :: close : ksg_20210129_1537 : [세무야] 소개 페이지 내용. */
+
+
+/* :: open : ksg_20210129_1645 : [세무야] 자가진단위험도 측정 페이지 내용. */
+/* :: innerO : 기존 내용 수정. */
+section.measure .measure__list .tabs-box .menu-box a {
+    background-color : #eb6108;
+}
+.tabs-box .menu-box a:hover {
+    opacity : 0.75;
+}
+.footer__social.absoluteMod {
+    position : absolute;
+    bottom : 0;
+    right : 0;
+}
+.btnInineCase {
+    display : inline-block;
+    margin-left : 10px;
+}
+.btnInineCase.fstChd {
+    margin-left : 0;
+}
+.btnNearTxt.upSort {
+    margin-bottom : 7px;
+}
+section.introduce .top__box .talk-box .menu-box .menu-btn {
+    color: #eb6108;
+}
+section.introduce .top__box .talk-box .menu-box .menu-btn.type1 {
+    background-color: transparent;
+    border : 1px solid #eb6108;
+}
+header.active .header__wrap h1.logo a {
+    background: url(/img/img_logo_new.png) no-repeat center/cover;
+}
+/* :: innerC : 기존 내용 수정. */
+/* :: close : ksg_20210129_1645 : [세무야] 자가진단위험도 측정 페이지 내용. */
+
+/* :: open : ksg_20210129_1845 : [세무야] 메인 페이지 내용. */
+/* :: innerO : 기존 내용 수정. */
+section.main__nohow .nohow__wrap .sub-box .sub-link-btn {
+color : #eb6108;
+}
+section.main__nohow .nohow__wrap .sub-box .sub-link-btn:after {
+    background-color: transparent;
+    background : url("/img/img_arrow_underBar.png") no-repeat center / 100%;
+    width: 240px;
+    bottom: -17px;
+    height: 13px;
+}
+section.main__nohow .nohow__wrap .tit-box {
+    font-size : 40px;
+    font-weight : 800;
+}
+section.main__nohow .nohow__wrap .list-box {
+    padding: 100px 0 90px;
+}
+/* :: innerC : 기존 내용 수정. */
+/* :: close : ksg_20210129_1845 : [세무야] 메인 페이지 내용. */
+
+
+/* :: open : ksg_20210129_2057 : [세무야] 세무야 소개 alt 페이지 내용. */
+/* :: innerO : 기존 내용 수정. */
+section.introduce.altSort article.page__header {
+    padding-top : 72px;
+}
+section.introduce.altSort .top__box {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    text-align : center;
+}
+section.introduce.altSort .top__box:after {
+    content: none;
+}
+section.introduce.altSort .top__box .talk-box .img-box {
+    display : inline-block;
+    width : auto;
+    height : 300px;
+    vertical-align : middle;
+}
+section.introduce.altSort .top__box .talk-box .rPdSort1 {
+    margin-right : 150px;
+}
+section.introduce.altSort .top__box .talk-box .img-box img {
+    display : inline-block;
+    width : auto;
+    height : 100%;
+}
+section.introduce.altSort .top__box .talk-box .menu-box {
+    display : inline-block;
+    text-align : left;
+    vertical-align : middle;
+    padding : 0;
+}
+section.introduce.altSort .top__box .talk-box .menu-box .titleTxt {
+    font-size : 40px;
+    font-weight : 800;
+    padding-bottom : 40px;
+}
+section.introduce.altSort .top__box .talk-box .menu-box .menu-btn.type1_1 {
+    background-color : #eb6108;
+    color : #fff;
+    width: 210px;
+}
+section.introduce.altSort.greySort {
+    background-color : #f2f2f2;
+}
+section.introduce.altSort .top__box .talk-box .rPdSort2 {
+    margin-right : 150px;
+}
+section.introduce.altSort .btnGroupt.typicalICSort {
+    padding-top : 60px;
+}
+section.introduce.altSort .btnGroup.typicalICSort {
+    padding-top : 60px;
+}
+.btnGroup.typicalICSort .iconBtn {
+    margin-left : 80px;
+    width : 95px;
+}
+.btnGroup.typicalICSort .iconBtn.fstChd {
+    margin-left : 0;
+}
+.btnGroup.typicalICSort .iconBtn i {
+    margin-bottom : 18px;
+} 
+.btnGroup.typicalICSort .iconBtn.type1 i {
+    width : 60px;
+    height : 60px;
+    background : url("/img/iconBtn_type1.svg") no-repeat center / cover;
+}
+.btnGroup.typicalICSort .iconBtn.type2 i {
+    width : 60px;
+    height : 60px;
+    background : url("/img/iconBtn_type2.svg") no-repeat center / cover;
+}
+.btnGroup.typicalICSort .iconBtn.type3 i {
+    width : 60px;
+    height : 60px;
+    background : url("/img/iconBtn_type3.svg") no-repeat center / cover;
+}
+.btnGroup.typicalICSort .iconBtn.type4 i {
+    width : 60px;
+    height : 60px;
+    background : url("/img/iconBtn_type4.svg") no-repeat center / cover;
+}
+.btnGroup.typicalICSort .iconBtn.type5 i {
+    width : 60px;
+    height : 60px;
+    background : url("/img/iconBtn_type5.svg") no-repeat center / cover;
+}
+.btnGroup.typicalICSort .iconBtn.type6 i {
+    width : 60px;
+    height : 60px;
+    background : url("/img/iconBtn_type6.svg") no-repeat center / cover;
+}
+.btnGroup.typicalICSort .iconBtn.type7 i {
+    width : 60px;
+    height : 60px;
+    background : url("/img/iconBtn_type7.svg") no-repeat center / 58px 60px;
+}
+.btnGroup.typicalICSort .iconBtn.type8 i {
+    width : 60px;
+    height : 60px;
+    background : url("/img/iconBtn_type8.svg") no-repeat center / cover;
+}
+.btnGroup.typicalICSort .iconBtn.type9 i {
+    width : 60px;
+    height : 60px;
+    background : url("/img/iconBtn_type9.svg") no-repeat center / 50px 50px;
+}
+.btnGroup.typicalICSort .iconBtn.type10 i {
+    width : 60px;
+    height : 60px;
+    background : url("/img/iconBtn_type10.svg") no-repeat center / cover;
+}
+/* :: innerC : 기존 내용 수정. */
+/* :: close : ksg_20210129_2057 : [세무야] 세무야 소개 alt 페이지 내용. */
+
+
+/* :: open : ksg_20210130_2249 : [세무야] 표준재무제표 파일 업로드 페이지 내용. */
+/* :: innerO : 신규 내용 추가. */
+section.fileUpSort .tblChkConCase .btnGroup.tbldisplSort .btn.fileUpSort.type5 {
+    padding: 12px 0;
+    width: 130px;
+    border-radius: 6px;
+    background-color: #ccc;
+    color: #fff;
+    text-align: center;
+    margin-right: 10px;
+    font-size: 16px;
+}
+/* :: innerC : 신규 내용 추가. */
+/* :: close : ksg_20210130_2249 : [세무야] 표준재무제표 파일 업로드 페이지 내용. */
+
+
+/* :: open : ksg_20210131_1916 : [세무야] 메인페이지 내용. */
+/* :: innerO : 신규 내용 추가. */
+section.main__img__banner.autoHSort {
+    height : auto;
+}
+/* :: innerC : 신규 내용 추가. */
+/* :: innerO : 기존 내용 수정. */
+section.main__img__banner .main__img_banner__box .top-box .third-txt {
+    font-size : 40px;
+}
+section.main__img__banner .main__img_banner__box {
+    width : 100%;
+    top : 50%;
+    transform : translateY(-50%);
+    left : 0;
+    text-align : center;
+}
+/* :: innerC : 기존 내용 수정. */
+/* :: close : ksg_20210131_1916 : [세무야] 메인페이지 내용. */
+
+/* :: open : ksg_20210201_1102 : [세무야] 위험진단내역 페이지 내용. */
+/* :: innerO : 신규 추가 파트. */
+article.sub__page__bg .txt-box.singleLinerSort {
+    top: 200px; 
+}
+section.board .tblRightGroup {
+    position : absolute;
+    right : 0;
+}
+section.board .tblRightGroup .inlineCase {
+    display : inline-block;
+    margin-right : 35px;
+    font-size : 12px;
+    font-weight : 500;
+}
+
+section.board .tblRightGroup .inlineCase.statDisplayer {
+    min-width : 50px;
+}
+section.board .tblRightGroup .inlineCase.statDisplayer.type-caution {
+    color : #fdba18;
+}
+section.board .tblRightGroup .inlineCase.statDisplayer.type-safe {
+    color : #46b60f;
+}
+section.board .tblRightGroup .inlineCase.statDisplayer.type-warn {
+    color : #eb8a08;
+}
+section.board .tblRightGroup .inlineCase.statDisplayer.type-danger {
+    color : #eb6108;
+}
+section.board .tblRightGroup .inlineCase.dwnBtnSort {
+    border : 1px solid #000;
+    padding: 8px 25px;
+}
+section.board .tblRightGroup .inlineCase.delBtnSort {
+    margin-right : 0;
+    border : 1px solid #d12e1e;
+    color : #d12e1e;
+    padding: 8px 23px;
+}
+section.board .tblRightGroup .inlineCase.lstChd {
+    margin-right : 0;
+}
+section.board .searchGroup.measureSort {
+    position : relative;
+    margin-top : 60px;
+    padding : 17px 30px;
+    background-color : #f2f2f2;
+}
+section.board .searchGroup.measureSort .searchBulk_left {
+    position : relative;
+    width : calc(100% - 150px);
+}
+section.board .searchGroup.measureSort .searchBulk_right {
+    position : absolute;
+    top : 17px;
+    right : 30px;
+    width : 140px;
+    height : calc(100% - 34px);
+    margin-left : 10px;
+    background-color : #eb6108;
+    border-radius: 4px;
+}
+section.board .searchGroup.measureSort .sbox.nearSchInputSort {
+    background-color : #fff;
+}
+section.board .btn_measureSch {
+    position : absolute;
+    width : 100%;
+    color : #fff;
+    font-size : 24px;
+    text-align : center;
+    top : 50%;
+    transform : translateY(-50%);
+}
+section.board .sbox.nearSchInputSort {
+    width : 200px;
+    vertical-align : middle;
+}
+section.board .searchGroup.measureSort .searchBulk_left input {
+    position : absolute;
+    right : 0;
+    margin-left : 10px;
+    width : calc(100% - 215px);
+    height : 44px;
+    vertical-align : middle;
+    border : 1px solid #dddddd;
+}
+section.board .searchGroup.measureSort .searchLayer_snd {
+    padding-top : 17px;
+    position : relative;
+}
+
+
+
+section.board .searchGroup.measureSort .betweenWaveText {
+    display: inline-block;
+    vertical-align: top;
+    line-height: 44px;
+    width : 100%;
+    text-align : center;
+}
+section.board .searchGroup.measureSort  .dateInputCase_start {
+   display : inline-block;
+   width : 480px;
+   position : absolute;
+   top : 17px;
+   left : 0;
+}
+section.board .searchGroup.measureSort  .dateInputCase_end {
+    display : inline-block;
+    width : 480px;
+    position : absolute;
+    top : 17px;
+    right : 0;
+ }
+ section.board .searchGroup.measureSort .tbox.dateBox {
+    width : 100%;
+ }
+ section.board .searchGroup.measureSort .searchBulk_left input.tbox.dateBox {
+    width: 100%;
+    padding : 0 20px;
+    margin-left: 0;
+    background-color : #fff;
+ }
+ section.introduce__measure.resultSort {
+     background-color : #fff;
+     display : block;
+ }
+ section.introduce__measure.resultSort.hide {
+     display : none;
+ }
+ section.introduce__measure.resultSort .con-box {
+    padding-top : 70px;
+    padding-bottom : 95px;
+ }
+ section.introduce__measure.resultSort .con-box .conIn_title {
+    font-size : 20px;
+    font-weight : 800;
+ }
+ .f_yellow {
+    color : #fdba18;
+ }
+ section.introduce__measure.resultSort .con-box .conIn_mainTxt {
+     padding-top : 24px;
+ }
+ section.introduce__measure .menu-box.menu-box.unbalSort .btn.brdSort {
+    width: 142px;
+    height: 54px;
+    line-height : 54px;
+    border-radius: 4px;
+    border: solid 1px #5f646b;
+    background-color: #ffffff;
+    vertical-align : top;
+    font-size : 24px;
+    font-weight : 800;
+    color : #5f646b;
+ }
+ section.introduce__measure .menu-box.unbalSort .menu-btn {
+    width : 250px;
+    margin-left : 10px;
+ }
+/* :: innerC : 신규 추가 파트. */
+/* :: close : ksg_20210201_1102 : [세무야] 위험진단내역 페이지 내용. */
+
+
+/* :: open : ksg_20210201_2233 : [세무야] 결과 상세내용 페이지 내용. */
+/* :: innerO : 신규 추가 파트. */
+.graphGroup.hide {
+    display : none;
+}
+/* :: innerC : 신규 추가 파트. */
+/* :: close : ksg_20210201_2233 : [세무야] 결과 상세내용 페이지 내용. */
+
+/* :: open : ksg_20210201_2234 : [세무야] 세무진단 위험도 측정 페이지 내용. */
+/* :: innerO : 신규 추가 파트. */
+section.measure .measure__list .tabs-box .info-box.search_corpSort {
+    width : 100%;
+    max-width : 800px;
+    padding-left: 0;
+    display : block;
+    margin : 0 auto;
+}
+section.measure .measure__list .tabs-box .info-box.search_corpSort .searchInputBox {
+    width : 240px;
+    margin : 0 auto;
+}
+section.measure .measure__list .tabs-box .info-box.search_corpSort .searchInputBox input {
+    width : 240px;
+}
+section.measure .measure__list .tabs-box .menu-box.search_corpSort {
+    padding-top : 30px;
+}
+/* :: innerC : 신규 추가 파트. */
+/* :: close : ksg_20210201_2234 : [세무야] 세무진단 위험도 측정 페이지 내용. */
+
+/* :: open : ksg_20210202_1232 : [세무야] 세무조사 위험진단 결과 리스트 페이지 내용. */
+/* :: innerO : 신규 내용 파트. */
+article.board__list.measureListSort .table-box .row .link-txt .subject-txt {
+    width: calc(100% - 450px);
+    cursor : pointer;
+}
+article.board__list.measureListSort .table-box .row .link-txt .subject-txt:hover {
+    text-decoration : underline;
+    text-underline-position: under;
+}
+article.board__list.measureListSort .table-box .row .link-txt .subject-txt.activated {
+    text-decoration : underline;
+    text-underline-position: under;
+}
+/* :: innerC : 신규 내용 파트. */
+/* :: close : ksg_20210202_1232 : [세무야] 세무조사 위험진단 결과 리스트 페이지 내용. */
+
+
+/* :: open : ksg_20210202_1634 : [세무야] 세무상담_토크 상세정보 페이지 내용.  */
+/* :: innerO : 신규내용 파트. */
+
+section.board .info_table_docuPart th,
+section.board .info_table_docuPart td {
+    padding : 10px;
+}
+section.board .info_table_docuPart th {
+    border-right : 1px solid #ccc;
+    background-color : #f2f2f2;
+}
+section.board .info_table_docuPart td {
+    text-align : left;
+}
+section.board .info_table_docuPart tr {
+    border : 1px solid #ccc;
+}
+.row.hide {
+    display : none;
+}
+/* :: innerC : 신규내용 파트. */
+/* :: close : ksg_20210202_1634 : [세무야] 세무상담_토크 상세정보 페이지 내용.  */
+
+
+/* :: open : ksg_20210202_1912 : [세무야] 세무야소개 페이지 내용. */
+/* :: innerO : 신규 내용 파트. */
+section.consulting.introSort .talk__group .talk-box {
+    width : 100%;
+}
+section.introduce__recommend .tit-box .sub-txt {
+    text-align: center;
+    padding-top: 4px;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: -0.37px;
+    font-weight : 400;
+}
+section.introduce__recommend .recommend__list ul li .info-box .bottom-txt a.underArrSort {
+    position : relative;
+    text-decoration: none;
+}
+section.introduce__recommend .recommend__list ul li .info-box .bottom-txt a.underArrSort:after {
+    background: url(/img/blackArrow_1.png) no-repeat center / 100%;
+    width: 85px;
+    height: 7px;
+    bottom: 0px;
+    content: '';
+    position: absolute;
+    left: -2px;
+}
+/* :: innerC : 신규 내용 파트. */
+/* :: close : ksg_20210202_1912 : [세무야] 세무야소개 페이지 내용. */
+
+
+/* :: open : ksg_20210202_2305 : [세무야] 세무조사 위험진단 결과 리스트 페이지 내용. */
+/* :: innerO : 신규 내용 파트. */
+.block-wrapper {
+    display : block;
+}
+  
+.single-chart {
+    width: 100%;
+    justify-content: space-around;
+}
+
+.circular-chart {
+    display: block;
+    margin: 10px auto;
+    max-width: 80%;
+    max-height: 307px;
+}
+
+.circle-bg {
+    fill: none;
+    stroke: #eee;
+    stroke-width: 0.7;
+}
+
+.circle {
+    fill: none;
+    stroke-width: 1;
+    stroke-linecap: square;
+    animation: progress 1s ease-out forwards;
+}
+
+@keyframes progress {
+    0% {
+        stroke-dasharray: 0 100;
+    }
+}
+
+.single-chart.grade1 .circular-chart .circle {
+    stroke : #d12e1e;
+}
+.single-chart.grade2 .circular-chart .circle {
+    stroke : #eb6108;
+}
+.single-chart.grade3 .circular-chart .circle {
+    stroke : #eb8a08;
+}
+.single-chart.grade4 .circular-chart .circle {
+    stroke : #fdba18;
+}
+.single-chart.grade5 .circular-chart .circle {
+    stroke : #46b60f;
+}
+.percentage {
+    fill: #666;
+    font-family: sans-serif;
+    font-size: 0.3em;
+    font-weight : 800;
+    text-anchor: middle;
+}
+.single-chart.grade1 .percentage {
+    fill : #d12e1e;
+}
+.single-chart.grade2 .percentage {
+    fill : #eb6108;
+}
+.single-chart.grade3 .percentage {
+    fill : #eb8a08;
+}
+.single-chart.grade4 .percentage {
+    fill : #fdba18;
+}
+.single-chart.grade5 .percentage {
+    fill : #46b60f;
+}
+/* :: innerC : 신규 내용 파트. */
+/* :: close : ksg_20210202_2305 : [세무야] 세무조사 위험진단 결과 리스트 페이지 내용. */
+
+/* :: open : ksg_20210204_1655 : [세무야] 법령정보 상세정보 페이지 내용. */
+/* :: innerO : 신규 내용 파트. */
+article.board__con .con-box.noneBdrTSort {
+    border-top : none;
+}
+section.board .info_table_docuPart {
+    position : relative;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    border : 1px solid #ccc;
+}
+table.info_table_docuPart:after {
+    content: "";
+    position: absolute;
+    top: -35px;
+    border-top: 1px solid #ccc;
+    width: 100%;
+}
+/* :: innerC : 신규 내용 파트. */
+/* :: close : ksg_20210204_1655 : [세무야] 법령정보 상세정보 페이지 내용. */
+
+
+/* :: open : ksg_20210208_1555 : [세무야] 세무상담 상담사 리스트 페이지 내용. */
+/* :: innerO : 신규 내용 파트. */
+article.page__header .sub-txt.darkerSort {
+    color : #000;
+    font-weight : 500;
+}
+article.input__form.topGapSort {
+    margin-top : 66px;
+}
+article.input__form .btnGroup.pgBotSort {
+    display: block;
+    padding: 60px 0 50px 0;
+    text-align: center;
+}
+article.input__form .btnGroup.pgBotSort .btn.type1 {
+    display: inline-block;
+    width: 400px;
+    height: 54px;
+    line-height: 54px;
+    font-size: 24px;
+    color: #fff;
+    background-color: #eb6108;
+}
+.radioBoxGroup.roundSort.thinTxtSort .cbox label .txt {
+    font-weight : 400;
+    font-size : 14px;
+}
+.cbox.triSort {
+    width : calc(33% - 5px);
+    /* :: inO : ksg_20210218_2124 : 삭제한 내용. */
+    /* margin : 0; */
+    /* :: inC : ksg_20210218_2124 : 삭제한 내용. */
+    /* :: inO : ksg_20210218_2124 : 추가 내용. */
+    margin : 0 0 20px 0;
+    /* :: inC : ksg_20210218_2124 : 추가 내용. */
+}
+/* :: inO : ksg_20210218_1214 : 추가 내용. */
+.cbox.triSort2 {
+    width : auto;
+    margin : 0 30px 0 0;
+}
+/* :: inO : ksg_20210218_1621 : 추가 내용. */
+.cbox.triSort3 {
+    display : block;
+    width : auto;
+    margin : 20px 0 0 0;
+}
+.cbox.triSort4 {
+    width : auto;
+    margin : 20px 30px 0 0;
+}
+/* :: inC : ksg_20210218_1621 : 추가 내용. */
+/* :: inO : ksg_20210218_2131 : 추가 내용. */
+.radioBoxGroup.roundSort .cbox.multiSort {
+    width : auto;
+    margin : 0 30px 20px 0;
+}
+/* :: inC : ksg_20210218_2131 : 추가 내용. */
+.radioDeparted_vert1 {
+    margin-top : 20px;
+}
+.radioDeparted_vert1.fstChd {
+    margin-top : 0;
+}
+/* :: inC : ksg_20210218_1214 : 추가 내용. */
+.radioBoxGroup.roundSort .cbox.triSort.leftSort {
+    text-align : left;
+}
+.radioBoxGroup.roundSort .cbox.triSort.centerSort {
+    text-align : center;
+}
+.radioBoxGroup.roundSort .cbox.triSort.rightSort {
+    text-align : right;
+}
+.radioBoxGroup.roundSort.topGapSort {
+    margin-top : 10px;
+}
+.sbox.topGapSort {
+    margin-top : 10px;
+}
+.radioBoxGroup.roundSort .cbox label .txt.blured {
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+}
+/* :: innerC : 신규 내용 파트. */
+/* :: close : ksg_20210208_1555 : [세무야] 세무상담 상담사 리스트 페이지 내용. */
+
+
+/* :: open : ksg_20210208_2052 : [세무야] : 진단결제 안내 페이지 내용. */
+/* :: innerO : 신규 내용 추가. */
+section.consulting__info .pay-box-list .pay-box .imgBox.payMethSort {
+    width : 360px;
+    margin : 100px auto;
+}
+section.consulting__info .pay-box-list .pay-box .imgBox.payMethSort img {
+    width : 100%;
+}
+/* :: innerC : 신규 내용 추가. */
+/* :: close : ksg_20210208_2052 : [세무야] : 진단결제 안내 페이지 내용. */
+
+/* :: open : ksg_20210217_1857 : [세무야] 모든 페이지 관련. */
+.hide {
+    display : none !important;
+}
+/* :: close : ksg_20210217_1857 : [세무야] 모든 페이지 관련. */
+
+/* :: open : ksg_20210218_1147 : [세무야] 회원가입 페이지 내용. */
+article.input__form .row .item .con .input-box.with-btn .input-btn.asolStatic_top1 {
+    top : 7px;
+    transform : none;
+}
+.sbox.topGapSort1 {
+    margin-top : 8px;
+}
+.row.bottomGapSort1 {
+    margin-bottom : 40px;
+}
+/* :: inO : ksg_20210219_1224 : 추가 내용. */
+article.input__form .term-box .term-wrap .term-con {
+    word-break : break-word;
+}
+.row-box.topGapSort {
+    margin-top : 20px;
+}
+.info-txt-underCbox {
+    padding: 8px 0 12px;
+    font-size: 12px;
+    letter-spacing: -0.28px;
+    color : #eb6108;
+}
+/* :: inC : ksg_20210219_1224 : 추가 내용. */
+/* :: inO : ksg_20210221_1940 : 추가 내용. */
+.sbox.full {
+    height : auto;
+    border : none;
+}
+.sbox select {
+    height : 44px;
+    border : 1px solid #000;
+}
+/* :: inC : ksg_20210221_1940 : 추가 내용. */
+/* :: close : ksg_20210218_1147 : [세무야] 회원가입 페이지 내용. */
+
+
+/* :: open : ksg_20210220_2033 : [세무야] FAQ 상세정보 페이지 내용. */
+article.board__con .con-box.qnaSort {
+    height : auto;
+}
+.qnaComplex_answer {
+    border-top : 1px solid #dddddd;
+    padding-top : 20px;
+    margin-top : 20px;
+    min-height : 100px;
+}
+.qnaComplex_question {
+    min-height : 80px;
+}
+.markBox_qna {
+    display : inline-block;
+    font-size : 20px;
+    font-weight : 800;
+    padding-right : 20px;
+}
+.infobox_qna {
+    display : inline-block;
+}
+.upFileBox_qna {
+    background-color: #eee;
+    margin-top: 20px;
+    padding: 10px;
+}
+.fileBtn_download {
+    display : block;
+    padding-top : 10px;
+}
+.fileBtn_download:first-child {
+    padding-top : 0;
+}
+.fileBtn_download .nameBox_file {
+    padding-right : 10px;
+    vertical-align : middle;
+}
+.fileBtn_download .downBtn_file {
+    vertical-align : middle;
+    padding : 3px;
+    border : 1px solid #ccc;
+    border-radius : 3px;
+    font-size : 12px;
+}
+/* :: close : ksg_20210220_2033 : [세무야] FAQ 상세정보 페이지 내용. */
+
+/* :: open : ksg_20210220_2155 : [세무야] 1:1문의 리스트 페이지 내용. */
+.btnGroup_listRightBot {
+    display : block;
+    text-align : right;
+    padding : 15px 0 0 0;
+}
+.btnGroup_listRightBot .linkBtn_reg {
+    display : inline-block;
+    min-width : 80px;
+    text-align : center;
+    border : 1px solid #eb6108;
+    color : #eb6108;
+    padding: 7px;
+    border-radius : 6px;
+    font-weight : 600;
+    font-size: 14px;
+}
+/* :: close : ksg_20210220_2155 : [세무야] 1:1문의 리스트 페이지 내용. */
+
+/* :: open : ksg_20210221_2051 : [세무야] 법령정보 목록 페이지 내용. */
+section.consulting__chat .keyword-result-box {
+    height : auto;
+}
+article.board__con .con-box {
+    min-height : 223px;
+    height : auto;
+    /* :: inO : ksg_20210222_0432 : 삭제 내용. */
+    /* white-space : pre-wrap; */
+    /* :: inC : ksg_20210222_0432 : 삭제 내용. */
+}
+/* :: inO : ksg_20210222_0432 : 추가 내용. */
+.con-box.pre-box {
+    white-space : pre-wrap;
+}
+/* :: inC : ksg_20210222_0432 : 추가 내용. */
+/* :: close : ksg_20210221_2051 : [세무야] 법령정보 목록 페이지 내용. */
+
+/* :: open : ksg_20210221_2249 : [세무야] 로그인 페이지 내용. */
+.row.topGapSort1 {
+    margin-top : 8px;
+}
+/* :: close : ksg_20210221_2249 : [세무야] 로그인 페이지 내용. */
+
+/* :: open : ksg_20210222_0222 : [세무야] 세무상담 페이지 내용. */
+section.consulting .talk__group .talk-box.extended1 {
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    width: 30%;
+}
+.formedImg_consultingTalkBox {
+    width : 120px;
+}
+/* :: close : ksg_20210222_0222 : [세무야] 세무상담 페이지 내용. */
+
+/* :: open : ksg_20210222_0314 : [세무야] 마이페이지_결제목록 페이지 내용. */
+article.board__list .table-box .row .link-txt .state-txt.rSided {
+    right : 30px;
+}
+/* :: close : ksg_20210222_0314 : [세무야] 마이페이지_결제목록 페이지 내용. */
+
+/* :: open : ksg_20210222_0337 : [세무야] 마이페이지_1:1문의상세 페이지 내용. */
+article.board__con .con-box.boxPreset_nonePre {
+    white-space : nowrap;
+}
+/* :: close : ksg_20210222_0337 : [세무야] 마이페이지_1:1문의상세 페이지 내용. */
+
+/* :: open : ksg_20210222_0416 : [세무야] 법령정보 상세 페이지 내용. */
+.viewCon_mobBlock {
+    display : none;
+}
+/* :: close : ksg_20210222_0416 : [세무야] 법령정보 상세 페이지 내용. */
+
+/* :: open : ksg_20210223_2300 : [세무야] 법령정보 목록 페이지 내용. */
+section.consulting__chat .chat-tit-box.mainTitleSort {
+    padding-top : 92px;
+}
+article.sub__page__bg .img-box {
+    max-width : 1920px;
+    margin : 0 auto;
+}
+/* :: close : ksg_20210223_2300 : [세무야] 법령정보 목록 페이지 내용. */
+
+/* :: open : ksg_20210224_1154 : [세무야] 야챗 상담 페이지 내용. */
+section.consulting__chat .chat-wrap {
+    height : 600px;
+    width : 450px;
+}
+/* :: close : ksg_20210224_1154 : [세무야] 야챗 상담 페이지 내용. */
+
+/* :: open : ksg_20210224_1421 : [세무야] 법령정보 목록 페이지 내용. */
+.webBlock1 {
+    display : block;
+}
+.mobileBlock1 {
+    display : none;
+}
+/* :: close : ksg_20210224_1421 : [세무야] 법령정보 목록 페이지 내용. */
+
+/* :: open : ksg_20210225_0023 : [세무야] 전문가 상담 대화내역 페이지 내용. */
+article.board__list .table-box .row .link-txt .readState-txt {
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: -0.28px;
+    position: absolute;
+    right: 160px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+article.board__list .table-box .row .link-txt .readState-txt.type-wait {
+    color: #eb6108;
+}
+article.board__list .table-box .row .link-txt .readState-txt.type-complete {
+    color: #000;
+}
+article.board__list .table-box .row .link-txt .writer-txt {
+    position: absolute;
+    right: 250px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 12px;
+    letter-spacing: -0.28px;
+}
+article.board__list .table-box .row .link-txt .subject-txt.length_limited1 {
+    width : calc(100% - 350px);
+    overflow :hidden;
+    text-overflow :ellipsis;
+    white-space :nowrap;
+}
+/* :: close : ksg_20210225_0023 : [세무야] 전문가 상담 대화내역 페이지 내용. */
+
+/* :: open : ksg_20210225_0044 : [세무야] 전문가 상담 상세내역 페이지 내용. */
+article.board__con .con-box.matchedSort {
+    min-height : auto;
+}
+/* :: close : ksg_20210225_0044 : [세무야] 전문가 상담 상세내역 페이지 내용. */
+
+/* :: open : ksg_20210225_0110 : [세무야] 전문가 상담 목록 페이지 내용. */
+article.board__list .table-box .row .link-txt .expert-txt {
+    font-size: 14px;
+    letter-spacing: -0.32px;
+    line-height: 20px;
+}
+article.board__list .table-box .row .link-txt .talkCount-txt {
+    position: absolute;
+    left: 40%;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 12px;
+    letter-spacing: -0.28px;
+}
+article.board__list .table-box .row .link-txt .noRead-txt {
+    position: absolute;
+    left: 60%;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 12px;
+    letter-spacing: -0.28px;
+}
+article.board__list .table-box .row .link-txt .matchStatus-txt {
+    position: absolute;
+    right: 20%;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 12px;
+    letter-spacing: -0.28px;
+}
+article.board__list .table-box .row .link-txt .matchStatus-txt.type-col1 {
+    color: #46b60f;
+}
+article.board__list .table-box .row .link-txt .matchStatus-txt.type-col2 {
+    color: #000;
+}
+article.board__list .table-box .row .link-txt .matchStatus-txt.type-col3 {
+    color: #eb6108;
+}
+/* :: close : ksg_20210225_0110 : [세무야] 전문가 상담 목록 페이지 내용. */
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1080px) {
+    /* :: open : ksg_20210222_0415 : [세무야] 법령정보 상세 페이지 모바일 내용. */
+    .viewCon_web {
+        display : none;
+    }
+    .viewCon_mobBlock {
+        display : block;
+    }
+    /* :: close : ksg_20210222_0415 : [세무야] 법령정보 상세 페이지 모바일 내용. */
+    /* :: open : ksg_20210224_1223 : [세무야] 야챗 상담 페이지 모바일 내용. */
+    section.consulting__chat .chat-wrap {
+        height : 342.5px;
+        width : 100%;
+        max-width : 320px;
+    }
+    header .header__wrap h1.logo a {
+        width : 62px;
+        height : 20px;
+        /* background: url(/img/img_logo.svg) no-repeat center/cover; */
+    }
+    /* :: close : ksg_20210224_1223 : [세무야] 야챗 상담 페이지 모바일 내용. */
+    /* :: open : ksg_20210224_1223 : [세무야] 법령정보 목록 페이지 모바일 내용. */
+    /* :: inO : 보존 내용. 타원형 버튼 그룹을 수평으로 길게 배열하고, 화면 밖으로 나간 부분은 수평 스크롤이 가능하도록 하는 스타일 내용. */
+    /* section.consulting__chat .keyword-search-box .keyword-list {
+        overflow-x : auto;
+        overflow-y : hidden;
+    }
+    section.consulting__chat .keyword-search-box .keyword-list ul {
+        white-space: nowrap;
+        margin : 0 auto;
+    } */
+    /* :: inC : 보존 내용. 타원형 버튼 그룹을 수평으로 길게 배열하고, 화면 밖으로 나간 부분은 수평 스크롤이 가능하도록 하는 스타일 내용. */
+    section.consulting__chat .keyword-info-txt {
+        margin-top : 50px;
+    }
+    article.paging ul li a.num {
+        margin : 0 9px;
+    }
+    section.consulting__chat .chat-tit-box.mainTitleSort {
+        padding-top : 50px;
+    }
+    .webBlock1 {
+        display : none;
+    }
+    .mobileBlock1 {
+        display : block;
+        margin : 0 auto;
+    }
+    footer .footer__wrap .footer__cs {
+        padding-top : 15px;
+    }
+    /* :: close : ksg_20210224_1223 : [세무야] 법령정보 목록 페이지 모바일 내용. */
+    /* :: open : ksg_20210224_1614 : [세무야] 메인 페이지 모바일 내용. */
+    section.main__visual .main__visual__bg .img-box {
+        padding-left : 0;
+        text-align : center;
+    }
+    section.main__nohow .nohow__wrap .tit-box {
+        font-size : 15px;
+        font-weight : 600;
+    }
+    section.main__nohow .nohow__wrap .list-box {
+        padding : 35px 0 45px 0;
+    }
+    section.main__nohow .nohow__wrap .sub-box .sub-link-btn:after {
+        width: 140px;
+        height: 7px;
+        bottom: -6px
+    }
+    section.main__process .process__box .process-con-box ul li:last-child {
+        margin-right : 24px;
+    }
+    /* :: close : ksg_20210224_1614 : [세무야] 메인 페이지 모바일 내용. */
+    /* :: open : ksg_20210224_1749 : [세무야] 세무야 소개 페이지 모바일 내용. */
+    section.introduce .top__box .talk-box .img-box {
+        margin : 0 auto;
+        width : 55px;
+    }
+    section.introduce .top__box .talk-box .img-box img {
+        width : 100%;
+    }
+    section.introduce .top__box .talk-box .menu-box {
+        padding : 25px 0 15px;
+    }
+    section.introduce .top__box .talk-box .menu-box .menu-btn.type1 {
+        width : 170px;
+        height : 38px;
+        font-size : 15px;
+        line-height : 15px;
+        letter-spacing : -0.35px;
+    }
+    section.introduce .top__box {
+        padding-top : 71px;
+    }
+    section.introduce .top__box:after {
+        top : 30px;
+        width : 30px;
+        height : 1px;
+    }
+    section.introduce article.page__header .intro-txt {
+        padding-top: 10px;
+        font-size: 15px;
+    }
+    section.introduce__measure .tit-box {
+        font-size: 15px;
+        font-weight: 600;
+        line-height : 1.2;
+        padding-top : 35px;
+        padding-bottom : 35px;
+    }
+    section.introduce__measure {
+        height : auto;
+    }
+    section.introduce__measure .img-box {
+        margin : 0 auto;
+        max-width : 307px;
+        width : calc(100% - 50px);
+    }
+    section.introduce__measure .img-box img {
+        width : 100%;
+    }
+    section.introduce__measure .menu-box {
+        padding-bottom : 35px;
+    }
+    section.introduce__measure .con-box {
+        font-size : 12px;
+    }
+    section.introduce__measure .menu-box .menu-btn {
+        width : 100%;
+        font-size : 15px;
+        height: 38px;
+    }
+    section.introduce__measure .inner {
+        max-width : 450px;
+    }
+    section.introduce__recommend .tit-box {
+        font-size : 20px;
+        line-height : 30px;
+    }
+    section.introduce__recommend .tit-box .sub-txt {
+        font-size : 15px;
+    }
+    section.introduce__recommend .recommend__list {
+        padding-top : 35px;
+        max-width : 450px;
+        margin : 0 auto;
+    }
+    section.introduce__recommend .recommend__list ul li {
+        display : block;
+    }
+    section.introduce__recommend .recommend__list ul li .img-box {
+        width : 100%;
+    }
+    section.introduce__recommend .recommend__list ul li .info-box {
+        width : 100%;
+        padding-left : 0;
+        padding-top : 15px;
+    }
+    section.introduce__recommend .recommend__list ul li .info-box .top-txt {
+        font-size : 15px;
+        line-height : 24px;
+    }
+    section.introduce__recommend .recommend__list ul li .info-box .mid-txt {
+        padding : 10px 0 12px 0;
+        font-size : 14px;
+        line-height : 22px;
+    }
+    section.introduce__recommend .recommend__list ul li.reverse .info-box {
+        padding : 10px 0 0 0;
+        text-align : right;
+    }
+    section.consulting .talk__group .talk-box.extended1 {
+        display : block;
+        margin : 0 auto 50px auto;
+        width : auto;
+    }
+    article.sub__page__bg .txt-box.webSort {
+        display : none;
+    }
+    /* :: close : ksg_20210224_1749 : [세무야] 세무야 소개 페이지 모바일 내용. */
+    /* :: open : ksg_20210224_2237 : [세무야] 로그인 페이지 모바일 내용. */
+    .container {
+        padding-bottom : 370px;
+    }
+    /* :: close : ksg_20210224_2237 : [세무야] 로그인 페이지 모바일 내용. */
+    /* :: open : ksg_20210224_2323 : [세무야] 회원가입 페이지 모바일 내용. */
+    article.measure__tabs.join_sort:after {
+        display : none;
+    }
+    .row-box.expertTForm .cbox.triSort {
+        width : auto;
+    }
+    /* :: close : ksg_20210224_2323 : [세무야] 회원가입 페이지 모바일 내용. */
+    /* :: open : ksg_20210225_0955 : [세무야] 푸터 페이지 모바일 내용. */
+    .mobileSide_paddingSort1 {
+        padding : 0 10px;
+    }
+    /* :: close : ksg_20210225_0955 : [세무야] 푸터 페이지 모바일 내용. */
+    /* :: open : ksg_20210225_1001 : [세무야] 에러 페이지 모바일 내용. */
+    article.error__page .error-btn {
+        max-width : 450px;
+    }
+    /* :: close : ksg_20210225_1001 : [세무야] 에러 페이지 모바일 내용. */
+    /* :: open : ksg_20210225_1013 : [세무야] 전문가 검색 페이지 모바일 내용. */
+    article.input__form.topGapSort {
+        margin : 60px auto 0 auto;
+    }
+    article.input__form .btnGroup.pgBotSort .btn.type1 {
+        width : calc(100% - 5px);
+    }
+    /* :: close : ksg_20210225_1013 : [세무야] 전문가 검색 페이지 모바일 내용. */
+    /* :: open : ksg_20210225_1020 : [세무야] 세무진단표 측정 페이지 모바일 내용. */
+    section.measure.GroupSet .measureCase.borderLess {
+        width : calc(100% - 5px);
+        max-width : 450px;
+    }
+    section.measure.GroupSet .btnGroup.pgBotSort .btn.type1 {
+        width : calc(100% - 5px);
+        max-width : 450px;
+    }
+    .regPop.warnSort {
+        width : calc(100% - 10px);
+        max-width : 450px;
+    }
+    /* :: inO : 추가 내용. */
+    section.measure.GroupSet .input__form {
+        padding-top : 0;
+    }
+    /* :: inC : 추가 내용. */
+    /* :: close : ksg_20210225_1020 : [세무야] 세무진단표 측정 페이지 모바일 내용. */
+    /* :: open : ksg_20210225_1030 : [세무야] 위험진단결과 목록 페이지 모바일 내용. */
+    article.board__list.measureListSort .table-box .row .link-txt .subject-txt {
+        width : 100%;
+    }
+    article.board__list.measureListSort .tblRightGroup {
+        display : block;
+        position : relative;
+        text-align : right;
+        margin-top : 10px;
+
+    }
+    section.board article.board__list.measureListSort .tblRightGroup .inlineCase {
+        margin-right : 0;
+        margin-left : 10px;
+    }
+    section.board article.board__list.measureListSort .tblRightGroup .inlineCase.dwnBtnSort {
+        position: absolute;
+        left: 0;
+        top : -5px;
+        margin-left : 0;
+    }
+    article.board__list.measureListSort {
+        max-width : 450px;
+        margin : 0 auto;
+    }
+    section.resultSpec .resultRepoGroup {
+        width : calc(100% - 5px);
+    }
+    section.resultSpec .btnGroup.pgBotSort .btn.type1 {
+        max-width : 450px;
+        width : calc(100% - 5px);
+        height : 38px;
+        font-size: 15px;
+        line-height: 38px;
+    }
+    section.resultSpec .repoCaseInfo .descriptionGroup .txtBox {
+        line-height : 15px;
+        font-size : 12px;
+    }
+    section.resultSpec .repoCaseInfo .descriptionGroup {
+        text-align : center;
+    }
+    /* :: close : ksg_20210225_1030 : [세무야] 위험진단결과 목록 페이지 모바일 내용. */
+    /* :: open : ksg_20210225_1121 : [세무야] 재무제표 업로드 페이지 모바일 내용. */
+    section.fileUpSort .radioBoxGroup.roundSort .cbox label .txt {
+        font-size : 15px;
+    }
+    section.fileUpSort .tblChkConCase .btnGroup.tbldisplSort {
+        display: block;
+        position: relative;
+        top: 0;
+        right: 0;
+        text-align: right;
+        padding-top : 10px;
+    }
+    section.fileUpSort .tblChkConCase {
+        padding-bottom : 10px;
+    }
+    section.fileUpSort .tblChkConCase .btnGroup.tbldisplSort .btn.fileUpSort.type5 {
+        padding: 10px 0;
+        width: 100px;
+        font-size: 12px;
+    }
+    section.fileUpSort .tblChkConCase .btnGroup.tbldisplSort .btn.showSort {
+        padding: 10px 0;
+        width: 100px;
+        font-size: 12px;
+    }
+    section.fileUpSort .tblChkConCase .btnGroup.tbldisplSort .btn.hideSort {
+        padding: 10px 0;
+        width: 100px;
+        font-size: 12px;
+    }
+    section.fileUpSort .tblMainCase table .rowTitleTd .titleBox {
+        font-size : 11px;
+    }
+    section.fileUpSort .tabBtnSet.typeSort .btn {
+        display: inline-block;
+        font-size: 10px;
+        padding: 9px 10px;
+        border: 1px solid #ccc;
+        color: #ccc;
+        border-radius: 3px;
+        margin-right: 5px;
+        margin-top : 2px;
+        margin-bottom : 2px;
+    }
+    section.fileUpSort .tblMainCase .btnGroup.tableTopSort {
+        text-align : center;
+    }
+    section.fileUpSort .btnGroup.pgBotSort .btn.type1 {
+        max-width: 450px;
+        font-size : 15px;
+        width : calc(100% - 5px);
+        height : 38px;
+        line-height : 38px;
+    }
+    article.board__list .table-box .row .link-txt .state-txt {
+        left : auto;
+        right : 0;
+    }
+
+    /* :: close : ksg_20210225_1121 : [세무야] 재무제표 업로드 페이지 모바일 내용. */
+    /* :: open : ksg_20210225_1152 : [세무야] 사용자 상담 그룹 페이지 모바일 내용. */
+    article.board__list .table-box .row .link-txt .talkCount-txt {
+        position: static;
+        padding-top: 7px;
+        display: inline-block;
+        transform : none;
+    }
+    article.board__list .table-box .row .link-txt .noRead-txt {
+        position: static;
+        display: inline-block;
+        padding-top: 7px;
+        margin-left: 15px;
+        transform : none;
+    }
+    article.board__list .table-box .row .link-txt .matchStatus-txt {
+        position: static;
+        display: inline-block;
+        padding-top: 7px;
+        margin-left: 15px;
+        transform : none;
+    }
+    /* :: close : ksg_20210225_1152 : [세무야] 사용자 상담 그룹 페이지 모바일 내용. */
+    /* :: open : ksg_20210225_1157 : [세무야] 사용자 상담 채팅내역 페이지 모바일 내용. */
+    article.board__list .table-box .row .link-txt .subject-txt.length_limited1 {
+        width : 100%;
+    }
+    article.board__list .table-box .row .link-txt .writer-txt {
+        position: static;
+        transform: none;
+        padding-top: 7px;
+        display : inline-block;
+    }
+    article.board__list .table-box .row .link-txt .readState-txt {
+        position: static;
+        transform: none;
+        padding-top: 7px;
+        margin-left : 15px;
+        display : inline-block;
+    }
+    /* :: close : ksg_20210225_1157 : [세무야] 사용자 상담 채팅내역 페이지 모바일 내용. */
+    /* :: open : ksg_20210225_1213 : [세무야] 진단결제안내 페이지 모바일 내용. */
+    section.consulting__info .pay-box-list .pay-box .imgBox.payMethSort {
+        width : 100%;
+
+    }
+    /* :: close : ksg_20210225_1213 : [세무야] 진단결제안내 페이지 모바일 내용. */
+    /* :: open : ksg_20210225_1228 : [세무야] 푸터 페이지 모바일 내용. */
+    .footerBar {
+        background-color: #ccc;
+        width: 100%;
+        position: fixed;
+        padding : 15px 0 10px 0;
+        bottom: 0;
+        text-align : center;
+        font-size : 0;
+        border-top : 1px solid #ddd;
+        background-color : #efefef;
+        z-index : 95;
+    }
+    .barIconBtn_footer {
+        display: inline-block;
+        margin: 0 4px;
+        vertical-align: top;
+        width: calc(20% - 20px);
+        min-width: 60px;
+        max-width: 85px;
+    }
+    .barIconBtn_footer img {
+        height : 30px;
+        margin-bottom : 3px;
+    }
+    .barTxt_footer {
+        font-size : 12px;
+    }
+    /* :: close : ksg_20210225_1228 : [세무야] 푸터 페이지 모바일 내용. */
+
+}
