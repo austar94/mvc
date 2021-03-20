@@ -5,5 +5,5 @@
 
 public/index.php
 
-에서 분화됩니다.
+에서 분화됨.
 
